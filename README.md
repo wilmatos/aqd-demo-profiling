@@ -6,15 +6,17 @@ This project demonstrates how to identify and optimize performance bottlenecks i
 
 ```
 image-processor/
-├── images/           # Place input images here
-├── output/           # Processed images will be saved here
-├── profiles/         # Profiling data will be saved here
-├── image_processor.py  # Main application with intentional inefficiencies
-├── profile_processor.py  # Script to profile the application
+├── images/                # Place input images here
+├── output/                # Processed images will be saved here
+├── profiles/              # Profiling data will be saved here
+├── image_processor.py     # Main application with intentional inefficiencies
+├── profile_processor.py   # Script to profile the application
+├── stress_test.py         # Extended version with more intensive processing
+├── profile_stress_test.py # Script to profile the stress test
 ├── download_sample_images.py  # Script to download sample images
 ├── profiling_analysis.md  # Analysis of profiling results
-├── requirements.txt   # Python dependencies
-└── README.md         # This file
+├── requirements.txt       # Python dependencies
+└── README.md              # This file
 ```
 
 ## Setup
@@ -28,7 +30,7 @@ pip install -r requirements.txt
 2. Download sample images using the provided script:
 
 ```bash
-python download_sample_images.py --count 5
+python download_sample_images.py --count 10
 ```
 
 ## Running the Application
@@ -53,6 +55,41 @@ python profile_processor.py --input ./images --output ./output --profile-type me
 python profile_processor.py --input ./images --output ./output --profile-type time
 ```
 
+## Stress Testing
+
+For more intensive performance analysis, use the stress test scripts:
+
+### Running the Stress Test
+
+The stress test applies more intensive processing with multiple iterations of each operation:
+
+```bash
+# Run with default settings (20 images, 3 iterations per operation)
+python stress_test.py
+
+# Customize the stress test
+python stress_test.py --iterations 5 --blur-radius 8 --image-count 30
+```
+
+Key parameters:
+- `--iterations`: Number of times to repeat each operation (default: 3)
+- `--blur-radius`: Maximum blur radius to use (default: 5)
+- `--image-count`: Target number of images to process (default: 20)
+
+The stress test will automatically duplicate existing images if needed to reach the target count.
+
+### Profiling the Stress Test
+
+```bash
+# Run all profiling types on the stress test
+python profile_stress_test.py
+
+# Run specific profiling with custom settings
+python profile_stress_test.py --profile-type cpu --iterations 4 --image-count 25
+```
+
+The stress test profiling results will be saved to `./profiles/stress_profile_stats.prof`.
+
 ## Profiling Results
 
 The profiling results are analyzed in detail in the [profiling_analysis.md](./profiling_analysis.md) file. Key findings include:
@@ -67,7 +104,11 @@ The profiling results are analyzed in detail in the [profiling_analysis.md](./pr
 You can visualize the CPU profile data using snakeviz:
 
 ```bash
+# For regular profiling
 snakeviz ./profiles/profile_stats.prof
+
+# For stress test profiling
+snakeviz ./profiles/stress_profile_stats.prof
 ```
 
 ## Performance Issues Identified
@@ -94,6 +135,9 @@ Based on the profiling results, these are the key optimization opportunities:
 
 ## Recent Changes
 
+- Added stress test scripts for more intensive performance analysis:
+  - `stress_test.py`: Extended version with more intensive processing
+  - `profile_stress_test.py`: Script to profile the stress test
 - Fixed the download_sample_images.py script:
   - Changed `-h` flag to `--ht` to avoid conflict with built-in help
   - Switched image source from Unsplash to Lorem Picsum for more reliable downloads
