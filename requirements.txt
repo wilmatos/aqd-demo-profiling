@@ -1,0 +1,4 @@
+Pillow>=9.0.0
+memory-profiler>=0.60.0
+matplotlib>=3.5.0
+snakeviz>=2.1.0
