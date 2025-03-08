@@ -29,7 +29,7 @@ def main():
                         help='Number of images to download')
     parser.add_argument('--width', '-w', type=int, default=1200,
                         help='Width of images to download')
-    parser.add_argument('--height', '-h', type=int, default=800,
+    parser.add_argument('--height', '--ht', type=int, default=800,
                         help='Height of images to download')
     
     args = parser.parse_args()
@@ -49,7 +49,7 @@ def main():
         category = random.choice(categories)
         
         # Create URL for Unsplash Source API
-        url = f"https://source.unsplash.com/random/{args.width}x{args.height}/?{category}"
+        url = f"https://picsum.photos/{args.width}/{args.height}"
         
         # Create save path
         save_path = os.path.join(args.output, f"sample_image_{i+1:03d}.jpg")
