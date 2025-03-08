@@ -99,9 +99,36 @@ The profiling results are analyzed in detail in the [profiling_analysis.md](./pr
 - Sequential processing doesn't utilize multi-core processors
 - Inefficient file listing adds unnecessary overhead
 
-## Visualizing CPU Profile Data
+## Visualizing Profile Data
 
-You can visualize the CPU profile data using snakeviz:
+### Using KCachegrind (Recommended)
+
+KCachegrind provides the most comprehensive and detailed visualization of profiling data:
+
+```bash
+# Run profiling and automatically open KCachegrind
+python run_profiling_with_visualization.py
+
+# Run stress test profiling and open KCachegrind
+python run_profiling_with_visualization.py --stress-test
+
+# Run specific profiling type
+python run_profiling_with_visualization.py --profile-type cpu
+```
+
+You can also convert existing profile data to KCachegrind format:
+
+```bash
+# Convert and open existing profile data
+python visualize_profile.py ./profiles/profile_stats.prof
+
+# Convert without opening KCachegrind
+python visualize_profile.py ./profiles/profile_stats.prof --no-open
+```
+
+### Using SnakeViz (Alternative)
+
+You can also visualize the CPU profile data using snakeviz:
 
 ```bash
 # For regular profiling
