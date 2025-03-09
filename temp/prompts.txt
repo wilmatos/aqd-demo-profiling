@@ -1,0 +1,11 @@
+Prompt to come up with ideas
+
+Prompt to build the application
+
+Prompt to reorganize the structure
+
+
+
+
+Prompt for /dev to optimize the code and run the tests.
+Optimize this application.  Run the tests with the code and use the profiling and performance information generated to determine ares that could beneft from optimization.  Make the appropriate changes, and test again afterwards to ensure the newly created code/optimizations have improved performance. Create a summary of what was done and what the results of the optimization were.
