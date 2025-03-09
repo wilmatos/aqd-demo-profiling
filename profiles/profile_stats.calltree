@@ -1,0 +1,4891 @@
+event: ns : Nanoseconds
+events: ns
+summary: 1320289895
+fl=/home/wmatosjr/apps/image-processor/image_processor.py
+fn=__init__
+28 3832
+cfl=/usr/lib/python3.10/genericpath.py
+cfn=exists
+calls=1 16
+28 10962
+
+fl=/home/wmatosjr/apps/image-processor/image_processor.py
+fn=get_image_files
+37 57580
+cfl=/usr/lib/python3.10/posixpath.py
+cfn=join
+calls=10 71
+37 52217
+cfl=~
+cfn=<built-in method posix.listdir>
+calls=5 0
+37 124601
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+37 2310
+cfl=~
+cfn=<method 'endswith' of 'str' objects>
+calls=50 0
+37 12297
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=50 0
+37 8833
+
+fl=/home/wmatosjr/apps/image-processor/image_processor.py
+fn=apply_resize
+50 105323
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=copy
+calls=10 1117
+50 200043548
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=resize
+calls=10 1884
+50 16520996
+
+fl=/home/wmatosjr/apps/image-processor/image_processor.py
+fn=apply_blur
+57 417406
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=copy
+calls=10 1117
+57 6030656
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=filter
+calls=10 1197
+57 409700305
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFilter.py
+cfn=__init__
+calls=10 161
+57 14684
+
+fl=/home/wmatosjr/apps/image-processor/image_processor.py
+fn=apply_sharpen
+63 145417
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=copy
+calls=10 1117
+63 5752119
+cfl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+cfn=enhance
+calls=10 25
+63 103711029
+cfl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+cfn=__init__:98
+calls=10 98
+63 243329109
+
+fl=/home/wmatosjr/apps/image-processor/image_processor.py
+fn=apply_contrast
+70 141342
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=copy
+calls=10 1117
+70 6051137
+cfl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+cfn=enhance
+calls=10 25
+70 90915471
+cfl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+cfn=__init__:65
+calls=10 65
+70 39751070
+
+fl=/home/wmatosjr/apps/image-processor/image_processor.py
+fn=apply_brightness
+77 125148
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=copy
+calls=10 1117
+77 7118301
+cfl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+cfn=enhance
+calls=10 25
+77 88561674
+cfl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+cfn=__init__:82
+calls=10 82
+77 9687041
+
+fl=/home/wmatosjr/apps/image-processor/image_processor.py
+fn=process_image
+84 2781906
+cfl=/home/wmatosjr/apps/image-processor/image_processor.py
+cfn=apply_resize
+calls=10 50
+84 216669867
+cfl=/home/wmatosjr/apps/image-processor/image_processor.py
+cfn=apply_blur
+calls=10 57
+84 416163051
+cfl=/home/wmatosjr/apps/image-processor/image_processor.py
+cfn=apply_sharpen
+calls=10 63
+84 352937674
+cfl=/home/wmatosjr/apps/image-processor/image_processor.py
+cfn=apply_contrast
+calls=10 70
+84 136859020
+cfl=/home/wmatosjr/apps/image-processor/image_processor.py
+cfn=apply_brightness
+calls=10 77
+84 105492164
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=info
+calls=20 1467
+84 4580646
+cfl=/usr/lib/python3.10/posixpath.py
+cfn=join
+calls=10 71
+84 553212
+cfl=/usr/lib/python3.10/posixpath.py
+cfn=basename
+calls=10 140
+84 51258
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=save
+calls=10 2130
+84 45783475
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=open
+calls=10 2903
+84 36461797
+cfl=~
+cfn=<built-in method time.time>
+calls=20 0
+84 13917
+
+fl=/home/wmatosjr/apps/image-processor/image_processor.py
+fn=process_all_images
+116 128130
+cfl=/home/wmatosjr/apps/image-processor/image_processor.py
+cfn=get_image_files
+calls=1 37
+116 257838
+cfl=/home/wmatosjr/apps/image-processor/image_processor.py
+cfn=process_image
+calls=10 84
+116 1318347987
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=info
+calls=3 1467
+116 1546628
+cfl=~
+cfn=<built-in method builtins.len>
+calls=3 0
+116 1156
+cfl=~
+cfn=<built-in method builtins.sum>
+calls=1 0
+116 2087
+cfl=~
+cfn=<built-in method time.time>
+calls=2 0
+116 1223
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+116 4846
+
+fl=/usr/lib/python3.10/_collections_abc.py
+fn=_check_methods
+78 21261
+
+fl=/usr/lib/python3.10/_collections_abc.py
+fn=__subclasshook__:409
+409 1960
+
+fl=/usr/lib/python3.10/_collections_abc.py
+fn=__subclasshook__:566
+566 8105
+cfl=/usr/lib/python3.10/_collections_abc.py
+cfn=_check_methods
+calls=2 78
+566 21261
+
+fl=/usr/lib/python3.10/abc.py
+fn=__new__
+105 25632
+cfl=~
+cfn=<built-in method __new__ of type object at 0x58da128db9a0>
+calls=5 0
+105 215775
+cfl=~
+cfn=<built-in method _abc._abc_init>
+calls=5 0
+105 224226
+
+fl=/usr/lib/python3.10/abc.py
+fn=register
+110 4857
+cfl=~
+cfn=<built-in method _abc._abc_register>
+calls=1 0
+110 41204
+
+fl=/usr/lib/python3.10/abc.py
+fn=__instancecheck__
+117 93814
+cfl=~
+cfn=<built-in method _abc._abc_instancecheck>
+calls=70 0
+117 320374
+
+fl=/usr/lib/python3.10/abc.py
+fn=__subclasscheck__
+121 17004
+cfl=~
+cfn=<built-in method _abc._abc_subclasscheck>
+calls=17 0
+121 139940
+
+fl=/usr/lib/python3.10/collections/__init__.py
+fn=namedtuple
+328 107033
+cfl=~
+cfn=<built-in method builtins.eval>
+calls=1 0
+328 113913
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+328 348
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+328 310
+cfl=~
+cfn=<built-in method sys._getframe>
+calls=1 0
+328 764
+cfl=~
+cfn=<built-in method sys.intern>
+calls=4 0
+328 3036
+cfl=~
+cfn=<method '__contains__' of 'frozenset' objects>
+calls=4 0
+328 1629
+cfl=~
+cfn=<method 'add' of 'set' objects>
+calls=3 0
+328 928
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+328 458
+cfl=~
+cfn=<method 'isidentifier' of 'str' objects>
+calls=4 0
+328 1680
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=2 0
+328 6574
+cfl=~
+cfn=<method 'replace' of 'str' objects>
+calls=1 0
+328 1197
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+328 1825
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=3 0
+328 1853
+
+fl=/usr/lib/python3.10/collections/__init__.py
+fn=<genexpr>
+402 2967
+
+fl=/usr/lib/python3.10/decimal.py
+fn=<module>
+1 27684
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 1022
+1 2514407
+
+fl=/usr/lib/python3.10/enum.py
+fn=__call__
+359 18219
+cfl=/usr/lib/python3.10/enum.py
+cfn=__new__
+calls=8 678
+359 12111
+
+fl=/usr/lib/python3.10/enum.py
+fn=__new__
+678 12111
+
+fl=/usr/lib/python3.10/enum.py
+fn=value
+801 1539
+
+fl=/usr/lib/python3.10/enum.py
+fn=__or__
+980 8095
+cfl=/usr/lib/python3.10/enum.py
+cfn=__call__
+calls=2 359
+980 9093
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+980 300
+
+fl=/usr/lib/python3.10/enum.py
+fn=__and__
+986 16127
+cfl=/usr/lib/python3.10/enum.py
+cfn=__call__
+calls=6 359
+986 21237
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=3 0
+986 2819
+
+fl=/usr/lib/python3.10/fractions.py
+fn=<module>
+1 24180
+cfl=/usr/lib/python3.10/enum.py
+cfn=__or__
+calls=1 980
+1 17488
+cfl=/usr/lib/python3.10/re.py
+cfn=compile
+calls=1 249
+1 2224413
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 1022
+1 2910606
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 105338
+
+fl=/usr/lib/python3.10/fractions.py
+fn=Fraction
+38 33273
+cfl=/usr/lib/python3.10/fractions.py
+cfn=_operator_fallbacks
+calls=7 276
+38 10055
+
+fl=/usr/lib/python3.10/fractions.py
+fn=__new__
+62 78731
+cfl=~
+cfn=<built-in method __new__ of type object at 0x58da128db9a0>
+calls=10 0
+62 8489
+
+fl=/usr/lib/python3.10/fractions.py
+fn=_operator_fallbacks
+276 10055
+
+fl=/usr/lib/python3.10/genericpath.py
+fn=exists
+16 4513
+cfl=~
+cfn=<built-in method posix.stat>
+calls=1 0
+16 6449
+
+fl=/usr/lib/python3.10/genericpath.py
+fn=_splitext
+121 134056
+cfl=~
+cfn=<method 'rfind' of 'str' objects>
+calls=66 0
+121 38612
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=getLevelName
+119 42807
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=23 0
+119 13743
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=<lambda>
+160 51378
+cfl=~
+cfn=<built-in method sys._getframe>
+calls=23 0
+160 23606
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=_checkLevel
+193 2706
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+193 390
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=_acquireLock
+219 11585
+cfl=~
+cfn=<method 'acquire' of '_thread.RLock' objects>
+calls=4 0
+219 3689
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=_releaseLock
+228 14061
+cfl=~
+cfn=<method 'release' of '_thread.RLock' objects>
+calls=4 0
+228 1861
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=__init__:283
+283 1031191
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=getLevelName
+calls=23 119
+283 56550
+cfl=/usr/lib/python3.10/multiprocessing/process.py
+cfn=current_process
+calls=23 37
+283 27401
+cfl=/usr/lib/python3.10/multiprocessing/process.py
+cfn=name
+calls=23 189
+283 20001
+cfl=/usr/lib/python3.10/posixpath.py
+cfn=splitext
+calls=23 117
+283 181361
+cfl=/usr/lib/python3.10/posixpath.py
+cfn=basename
+calls=23 140
+283 179089
+cfl=/usr/lib/python3.10/threading.py
+cfn=name
+calls=23 1129
+283 32070
+cfl=/usr/lib/python3.10/threading.py
+cfn=current_thread
+calls=23 1430
+283 51157
+cfl=~
+cfn=<built-in method _thread.get_ident>
+calls=23 0
+283 11969
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=23 0
+283 17992
+cfl=~
+cfn=<built-in method posix.getpid>
+calls=23 0
+283 40329
+cfl=~
+cfn=<built-in method time.time>
+calls=23 0
+283 10485
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=23 0
+283 20210
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=getMessage
+359 30533
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=usesTime:423
+423 51167
+cfl=~
+cfn=<method 'find' of 'str' objects>
+calls=23 0
+423 24062
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=_format
+431 84410
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=format:438
+438 33068
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=_format
+calls=23 431
+438 84410
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=formatTime
+597 157644
+cfl=~
+cfn=<built-in method time.localtime>
+calls=23 0
+597 202392
+cfl=~
+cfn=<built-in method time.strftime>
+calls=23 0
+597 187096
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=usesTime:643
+643 42900
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=usesTime:423
+calls=23 423
+643 75229
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=formatMessage
+649 28763
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=format:438
+calls=23 438
+649 117478
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=format:665
+665 196764
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=getMessage
+calls=23 359
+665 30533
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=formatTime
+calls=23 597
+665 547132
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=usesTime:643
+calls=23 643
+665 118129
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=formatMessage
+calls=23 649
+665 146241
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=__init__:786
+786 4524
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=filter
+806 55451
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=acquire
+912 533473
+cfl=~
+cfn=<method 'acquire' of '_thread.RLock' objects>
+calls=46 0
+912 44086
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=release
+919 37416
+cfl=~
+cfn=<method 'release' of '_thread.RLock' objects>
+calls=46 0
+919 12774
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=format:932
+932 47929
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=format:665
+calls=23 665
+932 1038799
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=handle:955
+955 89957
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=filter
+calls=23 806
+955 17943
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=acquire
+calls=23 912
+955 529286
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=release
+calls=23 919
+955 20403
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=emit
+calls=23 1088
+955 2314047
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=flush
+1077 90014
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=acquire
+calls=23 912
+1077 48273
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=release
+calls=23 919
+1077 29787
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=23 0
+1077 17556
+cfl=~
+cfn=<method 'flush' of '_io.TextIOWrapper' objects>
+calls=23 0
+1077 21028
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=emit
+1088 172305
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=format:932
+calls=23 932
+1088 1086728
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=flush
+calls=23 1077
+1088 206658
+cfl=~
+cfn=<method 'write' of '_io.TextIOWrapper' objects>
+calls=23 0
+1088 848356
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=append
+1261 3228
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=disable
+1307 2152
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=getLogger:1315
+1315 19044
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=_acquireLock
+calls=2 219
+1315 5977
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=_releaseLock
+calls=2 228
+1315 3942
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=_fixupParents
+calls=2 1366
+1315 27820
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=__init__:1435
+calls=2 1435
+1315 22067
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+1315 214
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=_fixupParents
+1366 19231
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=append
+calls=2 1261
+1366 3228
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=4 0
+1366 2566
+cfl=~
+cfn=<method 'rfind' of 'str' objects>
+calls=4 0
+1366 2795
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=__init__:1435
+1435 14447
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=_checkLevel
+calls=2 193
+1435 3096
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=__init__:786
+calls=2 786
+1435 4524
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=debug
+1455 49498
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=isEnabledFor
+calls=60 1724
+1455 58585
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=info
+1467 208950
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=_log
+calls=23 1600
+1467 5842788
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=isEnabledFor
+calls=23 1724
+1467 75536
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=findCaller
+1549 291394
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=<lambda>
+calls=23 160
+1549 74984
+cfl=/usr/lib/python3.10/posixpath.py
+cfn=normcase
+calls=23 52
+1549 45139
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=23 0
+1549 13983
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=makeRecord
+1585 84442
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=__init__:283
+calls=23 283
+1585 1679805
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=_log
+1600 423981
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=findCaller
+calls=23 1549
+1600 425500
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=makeRecord
+calls=23 1585
+1600 1764247
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=handle:1626
+calls=23 1626
+1600 3229060
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=handle:1626
+1626 60895
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=filter
+calls=23 806
+1626 37508
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=callHandlers
+calls=23 1680
+1626 3130657
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=callHandlers
+1680 159021
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=handle:955
+calls=23 955
+1680 2971636
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=getEffectiveLevel
+1710 5586
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=isEnabledFor
+1724 105106
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=_acquireLock
+calls=2 219
+1724 9297
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=_releaseLock
+calls=2 228
+1724 11980
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=disable
+calls=2 1307
+1724 2152
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=getEffectiveLevel
+calls=2 1710
+1724 5586
+
+fl=/usr/lib/python3.10/logging/__init__.py
+fn=getLogger:2071
+2071 12970
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=getLogger:1315
+calls=2 1315
+2071 79064
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+2071 370
+
+fl=/usr/lib/python3.10/multiprocessing/process.py
+fn=current_process
+37 27401
+
+fl=/usr/lib/python3.10/multiprocessing/process.py
+fn=name
+189 20001
+
+fl=/usr/lib/python3.10/numbers.py
+fn=__float__
+283 44647
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=numerator
+calls=10 334
+283 4747
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=denominator
+calls=10 338
+283 3500
+
+fl=/usr/lib/python3.10/posixpath.py
+fn=_get_sep
+41 57614
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=53 0
+41 28722
+
+fl=/usr/lib/python3.10/posixpath.py
+fn=normcase
+52 36051
+cfl=~
+cfn=<built-in method posix.fspath>
+calls=23 0
+52 9088
+
+fl=/usr/lib/python3.10/posixpath.py
+fn=join
+71 559228
+cfl=/usr/lib/python3.10/posixpath.py
+cfn=_get_sep
+calls=20 41
+71 17935
+cfl=~
+cfn=<built-in method posix.fspath>
+calls=20 0
+71 3702
+cfl=~
+cfn=<method 'endswith' of 'str' objects>
+calls=20 0
+71 9967
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=20 0
+71 14597
+
+fl=/usr/lib/python3.10/posixpath.py
+fn=splitext
+117 153933
+cfl=/usr/lib/python3.10/genericpath.py
+cfn=_splitext
+calls=33 121
+117 172668
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=33 0
+117 8555
+cfl=~
+cfn=<built-in method posix.fspath>
+calls=33 0
+117 10440
+
+fl=/usr/lib/python3.10/posixpath.py
+fn=basename
+140 119731
+cfl=/usr/lib/python3.10/posixpath.py
+cfn=_get_sep
+calls=33 41
+140 68401
+cfl=~
+cfn=<built-in method posix.fspath>
+calls=33 0
+140 7920
+cfl=~
+cfn=<method 'rfind' of 'str' objects>
+calls=33 0
+140 34295
+
+fl=/usr/lib/python3.10/re.py
+fn=compile
+249 6275
+cfl=/usr/lib/python3.10/re.py
+cfn=_compile
+calls=3 288
+249 2887415
+
+fl=/usr/lib/python3.10/re.py
+fn=_compile
+288 50532
+cfl=/usr/lib/python3.10/enum.py
+cfn=__and__
+calls=3 986
+288 40183
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=isstring
+calls=3 619
+288 5361
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=compile
+calls=3 783
+288 2781803
+cfl=/usr/lib/python3.10/types.py
+cfn=__get__
+calls=1 176
+288 5049
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=6 0
+288 3477
+cfl=~
+cfn=<built-in method builtins.len>
+calls=3 0
+288 1010
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_combine_flags
+81 3749
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_compile
+87 237655
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_combine_flags
+calls=5 81
+87 3749
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile
+calls=23 87
+87 301387
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile_charset
+calls=14 265
+87 32224
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_optimize_charset
+calls=14 292
+87 76045
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_simple
+calls=13 447
+87 30174
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__
+calls=52 165
+87 27651
+cfl=~
+cfn=<built-in method _sre.unicode_iscased>
+calls=4 0
+87 831
+cfl=~
+cfn=<built-in method _sre.unicode_tolower>
+calls=1 0
+87 222
+cfl=~
+cfn=<built-in method builtins.len>
+calls=72 0
+87 8844
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=159 0
+87 19244
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+87 589
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_compile_charset
+265 31350
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=49 0
+265 5950
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_optimize_charset
+292 67549
+cfl=~
+cfn=<built-in method _sre.unicode_iscased>
+calls=4 0
+292 1234
+cfl=~
+cfn=<built-in method _sre.unicode_tolower>
+calls=4 0
+292 1024
+cfl=~
+cfn=<built-in method builtins.len>
+calls=34 0
+292 3840
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=21 0
+292 3042
+cfl=~
+cfn=<method 'find' of 'bytearray' objects>
+calls=23 0
+292 8988
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_simple
+447 12756
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__
+calls=10 165
+447 5224
+cfl=~
+cfn=<built-in method builtins.len>
+calls=13 0
+447 12194
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_get_iscased
+477 1831
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_get_literal_prefix
+485 4834
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_get_iscased
+calls=2 477
+485 1113
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_get_charset_prefix
+516 4669
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_get_iscased
+calls=2 477
+516 718
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_compile_info
+560 193872
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile_charset
+calls=1 265
+560 5076
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_optimize_charset
+calls=1 292
+560 9632
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_get_literal_prefix
+calls=2 485
+560 5947
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_get_charset_prefix
+calls=2 516
+560 5387
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getwidth
+calls=3 175
+560 57587
+cfl=~
+cfn=<built-in method builtins.len>
+calls=4 0
+560 761
+cfl=~
+cfn=<built-in method builtins.min>
+calls=2 0
+560 2175
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+560 2160
+cfl=~
+cfn=<method 'extend' of 'list' objects>
+calls=1 0
+560 185
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=isstring
+619 6725
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=6 0
+619 1285
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=_code
+622 12549
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile
+calls=3 87
+622 437228
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_compile_info
+calls=3 560
+622 282782
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=3 0
+622 425
+
+fl=/usr/lib/python3.10/sre_compile.py
+fn=compile
+783 35583
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=isstring
+calls=3 619
+783 2649
+cfl=/usr/lib/python3.10/sre_compile.py
+cfn=_code
+calls=3 622
+783 732984
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=groups
+calls=6 82
+783 3950
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=parse
+calls=3 944
+783 1996075
+cfl=~
+cfn=<built-in method _sre.compile>
+calls=3 0
+783 9546
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=3 0
+783 1016
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=__init__:76
+76 7614
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=groups
+82 8173
+cfl=~
+cfn=<built-in method builtins.len>
+calls=16 0
+82 1976
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=opengroup
+85 76627
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=groups
+calls=10 82
+85 6199
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=5 0
+85 1007
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=5 0
+85 1660
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=closegroup
+97 5380
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getwidth
+calls=5 175
+97 46172
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=__init__:112
+112 23254
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=__len__
+161 26139
+cfl=~
+cfn=<built-in method builtins.len>
+calls=62 0
+161 8295
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=__getitem__
+165 82919
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:112
+calls=13 112
+165 8180
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=160 0
+165 24927
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=__setitem__
+169 10455
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__
+calls=1 161
+169 360
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__
+calls=2 165
+169 1023
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=append
+173 20350
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=37 0
+173 6308
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=getwidth
+175 86367
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getwidth
+calls=20 175
+175 47163
+cfl=~
+cfn=<built-in method builtins.max>
+calls=2 0
+175 551
+cfl=~
+cfn=<built-in method builtins.min>
+calls=48 0
+175 16841
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=__init__:225
+225 15550
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__next
+calls=3 234
+225 9520
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=3 0
+225 546
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=__next
+234 399490
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=match
+250 129161
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__next
+calls=27 234
+250 17726
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=get
+255 219151
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__next
+calls=524 234
+255 356262
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=getuntil
+268 24682
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__next
+calls=27 234
+268 15982
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=tell
+287 22958
+cfl=~
+cfn=<built-in method builtins.len>
+calls=38 0
+287 5835
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=_escape
+356 21784
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+356 515
+cfl=~
+cfn=<built-in method builtins.ord>
+calls=2 0
+356 638
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=18 0
+356 6056
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=_uniq
+433 14488
+cfl=~
+cfn=<built-in method fromkeys>
+calls=2 0
+433 3335
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=_parse_sub
+436 102131
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:112
+calls=2 112
+436 1332
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__
+calls=4 161
+436 1853
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__
+calls=6 165
+436 2897
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=append
+calls=2 173
+436 1427
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=match
+calls=15 250
+436 82823
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=tell
+calls=13 287
+436 10747
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_parse
+calls=15 494
+436 1903607
+cfl=~
+cfn=<built-in method builtins.len>
+calls=16 0
+436 4440
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=15 0
+436 2711
+cfl=~
+cfn=<method 'extend' of 'list' objects>
+calls=1 0
+436 1414
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=_parse
+494 577247
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=opengroup
+calls=5 85
+494 85493
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=closegroup
+calls=5 97
+494 51552
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:112
+calls=15 112
+494 13742
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__
+calls=26 161
+494 13823
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__getitem__
+calls=90 165
+494 79231
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__setitem__
+calls=14 169
+494 11838
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=append
+calls=35 173
+494 25231
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=match
+calls=44 250
+494 64064
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=get
+calls=524 255
+494 575413
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=getuntil
+calls=5 268
+494 40664
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=tell
+calls=25 287
+494 18046
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_escape
+calls=16 356
+494 28993
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_uniq
+calls=2 433
+494 17823
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_parse_sub
+calls=10 436
+494 1210323
+cfl=~
+cfn=<built-in method builtins.len>
+calls=17 0
+494 106205
+cfl=~
+cfn=<built-in method builtins.ord>
+calls=9 0
+494 2802
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=4 0
+494 558
+cfl=~
+cfn=<method 'isidentifier' of 'str' objects>
+calls=5 0
+494 3159
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=fix_flags
+928 5203
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=3 0
+928 503
+
+fl=/usr/lib/python3.10/sre_parse.py
+fn=parse
+944 29480
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:76
+calls=3 76
+944 7614
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__init__:225
+calls=3 225
+944 25616
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=_parse_sub
+calls=3 436
+944 1927659
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=fix_flags
+calls=3 928
+944 5706
+
+fl=/usr/lib/python3.10/threading.py
+fn=name
+1129 32070
+
+fl=/usr/lib/python3.10/threading.py
+fn=current_thread
+1430 45886
+cfl=~
+cfn=<built-in method _thread.get_ident>
+calls=23 0
+1430 5271
+
+fl=/usr/lib/python3.10/types.py
+fn=__get__
+176 3510
+cfl=/usr/lib/python3.10/enum.py
+cfn=value
+calls=1 801
+176 1539
+
+fl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+fn=<module>
+1 32435
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_open
+calls=2 3116
+1 6394
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_mime
+calls=2 3131
+1 1173
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_save
+calls=2 3142
+1 1776
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_extension
+calls=2 3165
+1 3078
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=6 404
+1 7081
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 2780199
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=2 0
+1 134160
+
+fl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+fn=_accept
+49 16668
+
+fl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+fn=_dib_accept
+53 30915
+cfl=/usr/lib/python3/dist-packages/PIL/_binary.py
+cfn=i32le
+calls=10 60
+53 56178
+
+fl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+fn=BmpImageFile
+60 90508
+cfl=~
+cfn=<built-in method builtins.vars>
+calls=6 0
+60 2741
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+60 505
+
+fl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+fn=DibImageFile
+277 810
+
+fl=/usr/lib/python3/dist-packages/PIL/GifImagePlugin.py
+fn=<module>
+1 29250
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_open
+calls=1 3116
+1 2977
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_mime
+calls=1 3131
+1 877
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_save
+calls=1 3142
+1 1026
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_save_all
+calls=1 3153
+1 1170
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_extension
+calls=1 3165
+1 1332
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=4 404
+1 3891
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 966407
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 24658
+
+fl=/usr/lib/python3/dist-packages/PIL/GifImagePlugin.py
+fn=_accept
+41 14335
+
+fl=/usr/lib/python3/dist-packages/PIL/GifImagePlugin.py
+fn=GifImageFile
+50 6838
+
+fl=/usr/lib/python3/dist-packages/PIL/GimpGradientFile.py
+fn=<module>
+1 13399
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=1 404
+1 1445
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=2 0
+1 31304
+
+fl=/usr/lib/python3/dist-packages/PIL/GimpGradientFile.py
+fn=GradientFile
+66 617
+
+fl=/usr/lib/python3/dist-packages/PIL/GimpGradientFile.py
+fn=GimpGradientFile
+104 551
+
+fl=/usr/lib/python3/dist-packages/PIL/GimpPaletteFile.py
+fn=<module>
+1 5274
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=1 404
+1 957
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 13653
+
+fl=/usr/lib/python3/dist-packages/PIL/GimpPaletteFile.py
+fn=GimpPaletteFile
+22 1029
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=preinit
+314 97063
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=5 404
+314 10077
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=5 1053
+314 25758848
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=_getdecoder
+386 89934
+cfl=~
+cfn=<built-in method PIL._imaging.jpeg_decoder>
+calls=10 0
+386 101636
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=10 0
+386 14758
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=10 0
+386 3669
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=_getencoder
+409 123080
+cfl=~
+cfn=<built-in method PIL._imaging.jpeg_encoder>
+calls=10 0
+409 108997
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=10 0
+409 15053
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=10 0
+409 3213
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=__init__:497
+497 942639
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=__getattr__
+510 54894
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=size
+529 46929
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=_new
+533 2483921
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=__init__:497
+calls=150 497
+533 867238
+cfl=~
+cfn=<method 'copy' of 'dict' objects>
+calls=150 0
+533 210222
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=_ensure_mutable
+595 25577
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:788
+calls=10 788
+595 54100
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=load:788
+788 586772
+cfl=~
+cfn=<method 'pixel_access' of 'ImagingCore' objects>
+calls=190 0
+788 241683
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=convert
+847 305687
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_new
+calls=20 533
+847 284205
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:788
+calls=20 788
+847 73358
+cfl=~
+cfn=<method 'convert' of 'ImagingCore' objects>
+calls=20 0
+847 26690685
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=20 0
+847 15441
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=copy
+1117 1031431
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_new
+calls=50 533
+1117 1261063
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:788
+calls=40 788
+1117 242938
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=load
+calls=10 145
+1117 186239390
+cfl=~
+cfn=<method 'copy' of 'ImagingCore' objects>
+calls=50 0
+1117 36220939
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=filter
+1197 729415
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_new
+calls=20 533
+1197 591819
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:788
+calls=20 788
+1197 74733
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFilter.py
+cfn=filter:29
+calls=10 29
+1197 242008681
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFilter.py
+cfn=filter:164
+calls=10 164
+1197 408733367
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=20 404
+1197 120588
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=20 1053
+1197 221767
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=20 0
+1197 13195
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=40 0
+1197 271183
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=getbands
+1225 157405
+cfl=/usr/lib/python3/dist-packages/PIL/ImageMode.py
+cfn=getmode
+calls=30 33
+1225 160369
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=getexif
+1348 94352
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=__init__:3325
+calls=10 3325
+1348 28083
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:3364
+calls=10 3364
+1348 2236046
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=__contains__
+calls=10 3558
+1348 31619
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=10 0
+1348 2799
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=histogram
+1425 59370
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:788
+calls=10 788
+1425 43405
+cfl=~
+cfn=<method 'histogram' of 'ImagingCore' objects>
+calls=10 0
+1425 8848476
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=resize
+1884 196020
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=size
+calls=20 529
+1884 9247
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_new
+calls=10 533
+1884 333009
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:788
+calls=10 788
+1884 43757
+cfl=~
+cfn=<method 'resize' of 'ImagingCore' objects>
+calls=10 0
+1884 15938963
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=save
+2130 403759
+cfl=/usr/lib/python3.10/posixpath.py
+cfn=splitext
+calls=10 117
+2130 164235
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=preinit
+calls=10 314
+2130 12464
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_ensure_mutable
+calls=10 595
+2130 79677
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=_save
+calls=10 627
+2130 40775874
+cfl=/usr/lib/python3/dist-packages/PIL/_util.py
+cfn=isPath
+calls=10 5
+2130 31297
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=10 0
+2130 17406
+cfl=~
+cfn=<built-in method io.open>
+calls=10 0
+2130 2949209
+cfl=~
+cfn=<method 'close' of '_io.BufferedRandom' objects>
+calls=10 0
+2130 1304833
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=10 0
+2130 6880
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=10 0
+2130 8244
+cfl=~
+cfn=<method 'pop' of 'dict' objects>
+calls=10 0
+2130 5297
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=20 0
+2130 24300
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=_check_size
+2616 93577
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=20 0
+2616 32957
+cfl=~
+cfn=<built-in method builtins.len>
+calls=20 0
+2616 12914
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=new
+2634 199009
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=__init__:497
+calls=20 497
+2634 38070
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_new
+calls=20 533
+2634 182026
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_check_size
+calls=20 2616
+2634 139448
+cfl=~
+cfn=<built-in method PIL._imaging.fill>
+calls=20 0
+2634 9711984
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=20 0
+2634 11394
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=_decompression_bomb_check
+2883 20456
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=open
+2903 202280
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=preinit
+calls=10 314
+2903 25853524
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_open_core
+calls=10 2968
+2903 9533756
+cfl=/usr/lib/python3/dist-packages/PIL/_util.py
+cfn=isPath
+calls=10 5
+2903 22036
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=20 0
+2903 5231
+cfl=~
+cfn=<built-in method io.open>
+calls=10 0
+2903 367264
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=10 0
+2903 442516
+cfl=~
+cfn=<method 'seek' of '_io.BufferedReader' objects>
+calls=10 0
+2903 35190
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=_open_core
+2968 487538
+cfl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+cfn=_accept
+calls=10 49
+2968 16668
+cfl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+cfn=_dib_accept
+calls=10 53
+2968 87093
+cfl=/usr/lib/python3/dist-packages/PIL/GifImagePlugin.py
+cfn=_accept
+calls=10 41
+2968 14335
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=size
+calls=10 529
+2968 2689
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_decompression_bomb_check
+calls=10 2883
+2968 20456
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=_accept
+calls=10 331
+2968 9742
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=jpeg_factory
+calls=10 798
+2968 8840470
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_accept
+calls=10 263
+2968 22917
+cfl=~
+cfn=<method 'seek' of '_io.BufferedReader' objects>
+calls=10 0
+2968 7931
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=50 0
+2968 23917
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=blend
+3032 354034
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_new
+calls=30 533
+3032 909259
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:788
+calls=60 788
+3032 172275
+cfl=~
+cfn=<built-in method PIL._imaging.blend>
+calls=30 0
+3032 281629622
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=register_open
+3116 20000
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=7 0
+3116 1793
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=7 0
+3116 5195
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=register_mime
+3131 6938
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=7 0
+3131 1193
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=register_save
+3142 7354
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=7 0
+3142 1391
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=register_save_all
+3153 3375
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=3 0
+3153 579
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=register_extension
+3165 20655
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=15 0
+3165 4422
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=15 0
+3165 2817
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=register_extensions
+3176 10649
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_extension
+calls=12 3165
+3176 23484
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=__init__:3325
+3325 28083
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=_fixup
+3331 2668948
+cfl=~
+cfn=<built-in method builtins.len>
+calls=20 0
+3331 32943
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=load:3364
+3364 560385
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=__init__:482
+calls=10 482
+3364 289534
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=load
+calls=10 770
+3364 1273624
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=10 404
+3364 40146
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=10 1053
+3364 36865
+cfl=~
+cfn=<method 'clear' of 'dict' objects>
+calls=20 0
+3364 7821
+cfl=~
+cfn=<method 'read' of '_io.BytesIO' objects>
+calls=10 0
+3364 6771
+cfl=~
+cfn=<method 'seek' of '_io.BytesIO' objects>
+calls=10 0
+3364 5836
+cfl=~
+cfn=<method 'startswith' of 'bytes' objects>
+calls=10 0
+3364 15064
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=__getitem__
+3552 92316
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_fixup
+calls=20 3331
+3552 2701891
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=__getitem__
+calls=20 542
+3552 1138345
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=__contains__
+calls=20 553
+3552 10633
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=__delitem__
+calls=20 639
+3552 59756
+
+fl=/usr/lib/python3/dist-packages/PIL/Image.py
+fn=__contains__
+3558 23470
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=__contains__
+calls=10 553
+3558 8149
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageChops.py
+fn=<module>
+1 60653
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=1 404
+1 1212
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 1768
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageColor.py
+fn=<module>
+1 20630
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=1 404
+1 1171
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 1859
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+fn=enhance
+25 122984
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=blend
+calls=30 3032
+25 283065190
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+fn=__init__:65
+65 623425
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=size
+calls=10 529
+65 8176
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=convert
+calls=20 847
+65 27369376
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=getbands
+calls=10 1225
+65 85792
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=new
+calls=10 2634
+65 804815
+cfl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+cfn=__init__
+calls=10 30
+65 9155940
+cfl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+cfn=__getattr__
+calls=10 42
+65 1703546
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+fn=__init__:82
+82 120564
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=size
+calls=10 529
+82 5324
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=getbands
+calls=10 1225
+82 84037
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=new
+calls=10 2634
+82 9477116
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageEnhance.py
+fn=__init__:98
+98 116721
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=filter
+calls=10 1197
+98 243064443
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=getbands
+calls=10 1225
+98 147945
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=<module>
+1 60197
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=2 404
+1 3972
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 2886
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=5 0
+1 89559
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=_tilesort
+70 15831
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=ImageFile
+80 3850
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=__init__
+83 146720
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=__init__:497
+calls=10 497
+83 37331
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=size
+calls=10 529
+83 3048
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=_open
+calls=10 345
+83 8493895
+cfl=/usr/lib/python3/dist-packages/PIL/_util.py
+cfn=isPath
+calls=10 5
+83 24489
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=load
+145 1017682
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_getdecoder
+calls=10 386
+145 209997
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=__getattr__
+calls=20 510
+145 54894
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:788
+calls=20 788
+145 88270
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=<listcomp>
+calls=10 215
+145 67901
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=load_prepare
+calls=10 276
+145 7265670
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=load_end
+calls=10 284
+145 223774
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=load_read
+calls=19 396
+145 816620
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=10 0
+145 75749
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+145 2229
+cfl=~
+cfn=<method 'cleanup' of 'ImagingDecoder' objects>
+calls=10 0
+145 18312
+cfl=~
+cfn=<method 'close' of '_io.BufferedReader' objects>
+calls=10 0
+145 287242
+cfl=~
+cfn=<method 'decode' of 'ImagingDecoder' objects>
+calls=19 0
+145 175853803
+cfl=~
+cfn=<method 'seek' of '_io.BufferedReader' objects>
+calls=10 0
+145 16595
+cfl=~
+cfn=<method 'setimage' of 'ImagingDecoder' objects>
+calls=10 0
+145 30962
+cfl=~
+cfn=<method 'sort' of 'list' objects>
+calls=10 0
+145 209690
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=<listcomp>
+215 58443
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=<lambda>
+calls=10 218
+215 9458
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=<lambda>
+218 9458
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=load_prepare
+276 66184
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=size
+calls=10 529
+276 2781
+cfl=~
+cfn=<built-in method PIL._imaging.new>
+calls=10 0
+276 7196705
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=load_end
+284 223774
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=StubImageFile
+311 1483
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=Parser
+337 2564
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=_save
+476 323652
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=_getencoder
+calls=10 409
+476 250343
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=size
+calls=10 529
+476 2886
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=load:788
+calls=10 788
+476 35619
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=20 0
+476 22690
+cfl=~
+cfn=<built-in method builtins.max>
+calls=10 0
+476 5937
+cfl=~
+cfn=<method 'cleanup' of 'ImagingEncoder' objects>
+calls=10 0
+476 12113
+cfl=~
+cfn=<method 'encode_to_file' of 'ImagingEncoder' objects>
+calls=10 0
+476 39286154
+cfl=~
+cfn=<method 'fileno' of '_io.BufferedRandom' objects>
+calls=10 0
+476 9914
+cfl=~
+cfn=<method 'flush' of '_io.BufferedRandom' objects>
+calls=20 0
+476 126202
+cfl=~
+cfn=<method 'setimage' of 'ImagingEncoder' objects>
+calls=10 0
+476 31658
+cfl=~
+cfn=<method 'sort' of 'list' objects>
+calls=10 0
+476 36168
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=_safe_read
+535 148396
+cfl=~
+cfn=<built-in method builtins.len>
+calls=90 0
+535 18795
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=70 0
+535 21269
+cfl=~
+cfn=<method 'read' of '_io.BytesIO' objects>
+calls=20 0
+535 4683
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=PyCodecState
+568 632
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+fn=PyDecoder
+579 6275
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFilter.py
+fn=filter:29
+29 90803
+cfl=~
+cfn=<method 'filter' of 'ImagingCore' objects>
+calls=10 0
+29 241917878
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFilter.py
+fn=__init__
+161 14684
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageFilter.py
+fn=filter:164
+164 75307
+cfl=~
+cfn=<method 'gaussian_blur' of 'ImagingCore' objects>
+calls=10 0
+164 408658060
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageMode.py
+fn=__init__
+23 14297
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageMode.py
+fn=getmode
+33 145375
+cfl=/usr/lib/python3/dist-packages/PIL/ImageMode.py
+cfn=__init__
+calls=24 23
+33 14297
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+33 697
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageOps.py
+fn=<module>
+1 18765
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=1 404
+1 1578
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 2300
+
+fl=/usr/lib/python3/dist-packages/PIL/ImagePalette.py
+fn=<module>
+1 9100
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=1 404
+1 1424
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 1306122
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 20807
+
+fl=/usr/lib/python3/dist-packages/PIL/ImagePalette.py
+fn=ImagePalette
+25 8767
+cfl=~
+cfn=<method 'setter' of 'property' objects>
+calls=1 0
+25 609
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageSequence.py
+fn=<module>
+1 1177
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 21069
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageSequence.py
+fn=Iterator
+19 1614
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+fn=__init__
+30 182396
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=histogram
+calls=10 1425
+30 8951251
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=10 0
+30 10018
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+30 12275
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+fn=__getattr__
+42 136589
+cfl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+cfn=_getcount
+calls=10 68
+42 299586
+cfl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+cfn=_getsum
+calls=10 76
+42 1118546
+cfl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+cfn=_getmean
+calls=10 98
+42 1617800
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=30 0
+42 41390
+cfl=~
+cfn=<built-in method builtins.setattr>
+calls=30 0
+42 13475
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+fn=_getcount
+68 116522
+cfl=~
+cfn=<built-in method _functools.reduce>
+calls=10 0
+68 178627
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+68 2460
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+68 1977
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+fn=_getsum
+76 1108717
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+76 2671
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+76 7158
+
+fl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+fn=_getmean
+98 91952
+cfl=/usr/lib/python3/dist-packages/PIL/ImageStat.py
+cfn=__getattr__
+calls=20 42
+98 1523840
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+98 2008
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=<module>
+1 82219
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_open
+calls=1 3116
+1 5330
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_mime
+calls=1 3131
+1 1963
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_save
+calls=1 3142
+1 1663
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_extensions
+calls=1 3176
+1 10853
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=5 404
+1 7158
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 1022
+1 4216054
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 10139978
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 32989
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=Skip
+54 60879
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=_safe_read
+calls=30 535
+54 41919
+cfl=/usr/lib/python3/dist-packages/PIL/_binary.py
+cfn=i16be
+calls=30 80
+54 22641
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=30 0
+54 7034
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=APP
+59 223493
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=getexif
+calls=10 1348
+59 2392899
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=__getitem__
+calls=20 3552
+59 4002941
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=_safe_read
+calls=10 535
+59 40797
+cfl=/usr/lib/python3/dist-packages/PIL/_binary.py
+cfn=i16be
+calls=10 80
+59 10245
+cfl=~
+cfn=<built-in method math.isnan>
+calls=10 0
+59 97670
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+59 3705
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=10 0
+59 2908
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=SOF
+190 132218
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=_safe_read
+calls=10 535
+190 13659
+cfl=/usr/lib/python3/dist-packages/PIL/_binary.py
+cfn=i16be
+calls=30 80
+190 21024
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+190 1512
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=30 0
+190 5845
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=10 0
+190 2051
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=DQT
+238 233177
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=_safe_read
+calls=20 535
+238 59357
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=<listcomp>:257
+calls=20 257
+238 221570
+cfl=/usr/lib/python3/dist-packages/PIL/_binary.py
+cfn=i16be
+calls=20 80
+238 16825
+cfl=~
+cfn=<built-in method builtins.len>
+calls=60 0
+238 8971
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=20 0
+238 5097
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=<listcomp>:257
+257 221570
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=_accept
+331 16456
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=JpegImageFile
+340 5340
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=_open
+345 730341
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=size
+calls=10 529
+345 5604
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=Skip
+calls=30 54
+345 132473
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=APP
+calls=10 59
+345 6774658
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=SOF
+calls=10 190
+345 176309
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=DQT
+calls=20 238
+345 544997
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=_accept
+calls=10 331
+345 6714
+cfl=/usr/lib/python3/dist-packages/PIL/_binary.py
+cfn=i16be
+calls=70 80
+345 79565
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=140 0
+345 43234
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=load_read
+396 72596
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=19 0
+396 744024
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=_getmp:478
+478 17025
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=_getmp:502
+calls=10 502
+478 41806
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=_getmp:502
+502 41806
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=_save
+627 372735
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=size
+calls=10 529
+627 7174
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=_save
+calls=10 476
+627 40143336
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=<listcomp>:636
+calls=10 636
+627 64157
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=validate_qtables
+calls=10 674
+627 10531
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=30 0
+627 120474
+cfl=~
+cfn=<built-in method builtins.len>
+calls=20 0
+627 9842
+cfl=~
+cfn=<built-in method builtins.max>
+calls=10 0
+627 19787
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=110 0
+627 27838
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=<listcomp>:636
+636 39949
+cfl=~
+cfn=<built-in method builtins.round>
+calls=20 0
+636 24208
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=validate_qtables
+674 10531
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+fn=jpeg_factory
+798 76156
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=__init__
+calls=10 83
+798 8705483
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=_getmp:478
+calls=10 478
+798 58831
+
+fl=/usr/lib/python3/dist-packages/PIL/JpegPresets.py
+fn=<module>
+1 22751
+
+fl=/usr/lib/python3/dist-packages/PIL/PaletteFile.py
+fn=<module>
+1 3850
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=1 404
+1 961
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 13334
+
+fl=/usr/lib/python3/dist-packages/PIL/PaletteFile.py
+fn=PaletteFile
+19 977
+
+fl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+fn=<module>
+1 127235
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=getLogger:2071
+calls=1 2071
+1 43500
+cfl=/usr/lib/python3.10/re.py
+cfn=compile
+calls=2 249
+1 669277
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_open
+calls=1 3116
+1 4932
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_mime
+calls=1 3131
+1 1638
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_save
+calls=1 3142
+1 1427
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_save_all
+calls=1 3153
+1 1452
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_extensions
+calls=1 3176
+1 6785
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=6 404
+1 8596
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 9517
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=7 0
+1 3315006
+
+fl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+fn=ChunkStream
+145 36390
+
+fl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+fn=iTXt
+237 5437
+
+fl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+fn=PngInfo
+259 42492
+
+fl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+fn=PngStream
+343 7034
+
+fl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+fn=PngImageFile
+668 3043465
+
+fl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+fn=_idat
+1036 1386
+
+fl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+fn=_fdat
+1047 1206
+
+fl=/usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py
+fn=<module>
+1 15877
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_open
+calls=1 3116
+1 2944
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_mime
+calls=1 3131
+1 1120
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_save
+calls=1 3142
+1 1451
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_extensions
+calls=1 3176
+1 9187
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=1 404
+1 4711
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 4266
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 25700
+
+fl=/usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py
+fn=PpmImageFile
+47 1334
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=<module>
+1 151607
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=getLogger:2071
+calls=1 2071
+1 48904
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_open
+calls=1 3116
+1 4411
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_mime
+calls=1 3131
+1 1360
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_save
+calls=1 3142
+1 1402
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_save_all
+calls=1 3153
+1 1332
+cfl=/usr/lib/python3/dist-packages/PIL/Image.py
+cfn=register_extensions
+calls=1 3176
+1 7308
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=<dictcomp>
+calls=1 135
+1 2476
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=3 404
+1 5322
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 1022
+1 5954239
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1053
+1 496696
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=5 0
+1 1786112
+cfl=~
+cfn=<built-in method builtins.setattr>
+calls=26 0
+1 23126
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=2 0
+1 519
+cfl=~
+cfn=<method 'replace' of 'str' objects>
+calls=13 0
+1 3211
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=<dictcomp>
+135 2476
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=_accept
+263 22917
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=IFDRational
+294 16679
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_delegate
+calls=26 379
+294 9262
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=__init__:308
+308 69775
+cfl=/usr/lib/python3.10/fractions.py
+cfn=__new__
+calls=10 62
+308 87220
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=20 0
+308 58095
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=numerator
+334 4747
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=denominator
+338 3500
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=_delegate
+379 9262
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=ImageFileDirectory_v2
+421 1358008
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_register_loader
+calls=5 653
+421 2531
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=decorator:654
+calls=5 654
+421 48063
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_register_writer
+calls=5 664
+421 2502
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=decorator:665
+calls=5 665
+421 2592
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_register_basic
+calls=8 671
+421 69545
+cfl=~
+cfn=<method 'setter' of 'property' objects>
+calls=1 0
+421 1098
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=__init__:482
+482 215078
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=reset
+calls=10 517
+482 27582
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_unpack
+calls=10 647
+482 46874
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=<lambda>:511
+511 31860
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=reset
+517 39593
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=__getitem__
+542 111060
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=<lambda>:511
+calls=40 511
+542 26580
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=__setitem__
+calls=20 556
+542 582696
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=<lambda>:679
+calls=10 679
+542 35391
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=load_rational
+calls=10 722
+542 382618
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=__contains__
+553 18782
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=__setitem__
+556 37052
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=<lambda>:511
+calls=20 511
+556 5280
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_setitem
+calls=20 559
+556 540364
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=_setitem
+559 296338
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=<listcomp>
+calls=10 600
+559 20833
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=<genexpr>:604
+calls=40 604
+559 61069
+cfl=/usr/lib/python3/dist-packages/PIL/TiffTags.py
+cfn=lookup
+calls=20 36
+559 23082
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=20 0
+559 139042
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=<listcomp>
+600 15937
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=10 0
+600 4896
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=<genexpr>:604
+604 32223
+cfl=/usr/lib/python3/dist-packages/PIL/TiffTags.py
+cfn=cvt_enum
+calls=20 29
+604 28846
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=__delitem__
+639 40771
+cfl=~
+cfn=<method 'pop' of 'dict' objects>
+calls=60 0
+639 18985
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=_unpack
+647 140567
+cfl=~
+cfn=<built-in method _struct.unpack>
+calls=130 0
+647 86030
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=_register_loader
+653 2531
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=decorator:654
+654 35743
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=5 404
+654 4754
+cfl=~
+cfn=<method 'replace' of 'str' objects>
+calls=5 0
+654 2557
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=5 0
+654 5009
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=_register_writer
+664 2502
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=decorator:665
+665 2592
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=_register_basic
+671 50742
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=8 404
+671 10770
+cfl=~
+cfn=<built-in method _struct.calcsize>
+calls=8 0
+671 8033
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=<lambda>:679
+679 20609
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_unpack
+calls=10 647
+679 12643
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+679 2139
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=load_rational
+722 90266
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_unpack
+calls=10 647
+722 18556
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=<genexpr>:729
+calls=20 729
+722 259600
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+722 14196
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=combine
+726 26207
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=__init__:308
+calls=10 308
+726 215090
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=<genexpr>:729
+729 18303
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=combine
+calls=10 726
+729 241297
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=_ensure_read
+761 85167
+cfl=~
+cfn=<built-in method builtins.len>
+calls=80 0
+761 14100
+cfl=~
+cfn=<method 'read' of '_io.BytesIO' objects>
+calls=80 0
+761 18172
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=load
+770 676879
+cfl=/usr/lib/python3.10/logging/__init__.py
+cfn=debug
+calls=60 1455
+770 108083
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=_safe_read
+calls=20 535
+770 37411
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=reset
+calls=10 517
+770 12011
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_unpack
+calls=100 647
+770 148524
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=_ensure_read
+calls=80 761
+770 117439
+cfl=/usr/lib/python3/dist-packages/PIL/TiffTags.py
+cfn=lookup
+calls=60 36
+770 95919
+cfl=~
+cfn=<built-in method builtins.len>
+calls=60 0
+770 10102
+cfl=~
+cfn=<built-in method builtins.repr>
+calls=60 0
+770 30496
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=60 0
+770 17665
+cfl=~
+cfn=<method 'seek' of '_io.BytesIO' objects>
+calls=40 0
+770 8746
+cfl=~
+cfn=<method 'tell' of '_io.BytesIO' objects>
+calls=30 0
+770 10349
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=ImageFileDirectory_v1
+923 10732
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=TiffImageFile
+1022 10452
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+fn=AppendingTiffWriter
+1779 15464
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffTags.py
+fn=cvt_enum
+29 25247
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=10 0
+29 3599
+
+fl=/usr/lib/python3/dist-packages/PIL/TiffTags.py
+fn=lookup
+36 74842
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=80 0
+36 44159
+
+fl=/usr/lib/python3/dist-packages/PIL/_binary.py
+fn=i32le
+60 26225
+cfl=~
+cfn=<built-in method _struct.unpack_from>
+calls=10 0
+60 29953
+
+fl=/usr/lib/python3/dist-packages/PIL/_binary.py
+fn=i16be
+80 89702
+cfl=~
+cfn=<built-in method _struct.unpack_from>
+calls=160 0
+80 60598
+
+fl=/usr/lib/python3/dist-packages/PIL/_util.py
+fn=isPath
+5 59446
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=30 0
+5 18376
+
+fl=<frozen importlib._bootstrap>
+fn=_new_module
+48 21747
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:71
+71 40270
+cfl=~
+cfn=<built-in method _thread.allocate_lock>
+calls=38 0
+71 15678
+
+fl=<frozen importlib._bootstrap>
+fn=acquire
+100 138053
+cfl=~
+cfn=<built-in method _thread.get_ident>
+calls=19 0
+100 4519
+cfl=~
+cfn=<method '__exit__' of '_thread.lock' objects>
+calls=19 0
+100 5547
+
+fl=<frozen importlib._bootstrap>
+fn=release
+125 163813
+cfl=~
+cfn=<built-in method _thread.get_ident>
+calls=19 0
+125 6449
+cfl=~
+cfn=<method '__exit__' of '_thread.lock' objects>
+calls=19 0
+125 7173
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:165
+165 16094
+
+fl=<frozen importlib._bootstrap>
+fn=__enter__:169
+169 31081
+cfl=<frozen importlib._bootstrap>
+cfn=acquire
+calls=19 100
+169 148119
+cfl=<frozen importlib._bootstrap>
+cfn=_get_module_lock
+calls=19 179
+169 290682
+
+fl=<frozen importlib._bootstrap>
+fn=__exit__:173
+173 321241
+cfl=<frozen importlib._bootstrap>
+cfn=release
+calls=19 125
+173 177435
+
+fl=<frozen importlib._bootstrap>
+fn=_get_module_lock
+179 224424
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:71
+calls=19 71
+179 55948
+cfl=~
+cfn=<built-in method _imp.acquire_lock>
+calls=19 0
+179 5994
+cfl=~
+cfn=<built-in method _imp.release_lock>
+calls=19 0
+179 4316
+
+fl=<frozen importlib._bootstrap>
+fn=cb
+198 36545
+cfl=~
+cfn=<built-in method _imp.acquire_lock>
+calls=19 0
+198 6084
+cfl=~
+cfn=<built-in method _imp.release_lock>
+calls=19 0
+198 4404
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=19 0
+198 6698
+
+fl=<frozen importlib._bootstrap>
+fn=_call_with_frames_removed
+233 38427
+cfl=~
+cfn=<built-in method _imp.create_dynamic>
+calls=1 0
+233 2173486
+cfl=~
+cfn=<built-in method _imp.exec_dynamic>
+calls=1 0
+233 757
+cfl=~
+cfn=<built-in method builtins.__import__>
+calls=15 0
+233 25698594
+cfl=~
+cfn=<built-in method builtins.exec>
+calls=18 0
+233 22770915
+
+fl=<frozen importlib._bootstrap>
+fn=_verbose_message
+244 76854
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:357
+357 26199
+
+fl=<frozen importlib._bootstrap>
+fn=cached
+391 37893
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_cached
+calls=19 510
+391 438199
+
+fl=<frozen importlib._bootstrap>
+fn=parent
+404 208122
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=101 0
+404 60812
+
+fl=<frozen importlib._bootstrap>
+fn=has_location
+412 5244
+
+fl=<frozen importlib._bootstrap>
+fn=_init_module_attrs
+492 3241882
+cfl=<frozen importlib._bootstrap>
+cfn=cached
+calls=37 391
+492 476092
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=19 404
+492 33120
+cfl=<frozen importlib._bootstrap>
+cfn=has_location
+calls=19 412
+492 5244
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=114 0
+492 248864
+
+fl=<frozen importlib._bootstrap>
+fn=module_from_spec
+564 95391
+cfl=<frozen importlib._bootstrap>
+cfn=_new_module
+calls=18 48
+564 21747
+cfl=<frozen importlib._bootstrap>
+cfn=_init_module_attrs
+calls=19 492
+564 4005202
+cfl=<frozen importlib._bootstrap_external>
+cfn=create_module:874
+calls=18 874
+564 4708
+cfl=<frozen importlib._bootstrap_external>
+cfn=create_module:1174
+calls=1 1174
+564 2186439
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=19 0
+564 5371
+
+fl=<frozen importlib._bootstrap>
+fn=_load_unlocked
+664 121400
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=19 244
+664 11294
+cfl=<frozen importlib._bootstrap>
+cfn=module_from_spec
+calls=19 564
+664 6318858
+cfl=<frozen importlib._bootstrap_external>
+cfn=exec_module:877
+calls=18 877
+664 24729169
+cfl=<frozen importlib._bootstrap_external>
+cfn=exec_module:1182
+calls=1 1182
+664 7263
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=19 0
+664 7731
+cfl=~
+cfn=<method 'pop' of 'dict' objects>
+calls=19 0
+664 9034
+
+fl=<frozen importlib._bootstrap>
+fn=find_spec:746
+746 12220
+cfl=~
+cfn=<built-in method _imp.is_builtin>
+calls=3 0
+746 6736
+
+fl=<frozen importlib._bootstrap>
+fn=find_spec:826
+826 14927
+cfl=~
+cfn=<built-in method _imp.is_frozen>
+calls=19 0
+826 11637
+
+fl=<frozen importlib._bootstrap>
+fn=__enter__:893
+893 28625
+cfl=~
+cfn=<built-in method _imp.acquire_lock>
+calls=57 0
+893 42910
+
+fl=<frozen importlib._bootstrap>
+fn=__exit__:897
+897 29990
+cfl=~
+cfn=<built-in method _imp.release_lock>
+calls=57 0
+897 12351
+
+fl=<frozen importlib._bootstrap>
+fn=_find_spec
+921 326687
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:746
+calls=19 746
+921 18956
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:826
+calls=19 826
+921 26564
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:893
+calls=57 893
+921 71535
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:897
+calls=57 897
+921 42341
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1431
+calls=19 1431
+921 1933727
+
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load_unlocked
+987 100505
+cfl=<frozen importlib._bootstrap>
+cfn=_load_unlocked
+calls=19 664
+987 24995514
+cfl=<frozen importlib._bootstrap>
+cfn=_find_spec
+calls=19 921
+987 2419810
+cfl=~
+cfn=<built-in method builtins.setattr>
+calls=16 0
+987 14216
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=35 0
+987 13429
+
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load
+1022 140739
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:165
+calls=19 165
+1022 16094
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:169
+calls=19 169
+1022 469882
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:173
+calls=19 173
+1022 498676
+cfl=<frozen importlib._bootstrap>
+cfn=cb
+calls=19 198
+1022 53731
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load_unlocked
+calls=19 987
+1022 25505445
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=19 0
+1022 5129
+
+fl=<frozen importlib._bootstrap>
+fn=_handle_fromlist
+1053 295030
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed
+calls=15 233
+1053 25704744
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=66 0
+1053 82552
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=66 0
+1053 23729
+cfl=~
+cfn=<method 'format' of 'str' objects>
+calls=15 0
+1053 20145
+
+fl=<frozen importlib._bootstrap_external>
+fn=_relax_case
+71 5720
+
+fl=<frozen importlib._bootstrap_external>
+fn=_unpack_uint32
+84 57649
+cfl=~
+cfn=<built-in method builtins.len>
+calls=54 0
+84 8174
+cfl=~
+cfn=<built-in method from_bytes>
+calls=54 0
+84 15740
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_join
+126 223409
+cfl=<frozen importlib._bootstrap_external>
+cfn=<listcomp>
+calls=129 128
+126 199980
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=129 0
+126 37466
+
+fl=<frozen importlib._bootstrap_external>
+fn=<listcomp>
+128 142881
+cfl=~
+cfn=<method 'rstrip' of 'str' objects>
+calls=294 0
+128 57099
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_split
+132 99569
+cfl=~
+cfn=<built-in method builtins.max>
+calls=36 0
+132 93873
+
+fl=<frozen importlib._bootstrap_external>
+fn=<genexpr>
+134 41861
+cfl=~
+cfn=<method 'rfind' of 'str' objects>
+calls=36 0
+134 12984
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_stat
+140 43725
+cfl=~
+cfn=<built-in method posix.stat>
+calls=60 0
+140 455254
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_is_mode_type
+150 28047
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=19 140
+150 116021
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_isfile
+159 22071
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type
+calls=19 150
+159 144068
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_isabs
+180 13108
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=19 0
+180 15590
+
+fl=<frozen importlib._bootstrap_external>
+fn=cache_from_source
+380 181994
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join
+calls=36 126
+380 107171
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_split
+calls=36 132
+380 193442
+cfl=~
+cfn=<built-in method posix.fspath>
+calls=36 0
+380 7306
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=36 0
+380 11539
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=36 0
+380 11245
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_cached
+510 42402
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source
+calls=18 380
+510 314300
+cfl=~
+cfn=<method 'endswith' of 'str' objects>
+calls=20 0
+510 81497
+
+fl=<frozen importlib._bootstrap_external>
+fn=_check_name_wrapper
+542 30935
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_filename
+calls=18 1065
+542 4839
+
+fl=<frozen importlib._bootstrap_external>
+fn=_classify_pyc
+585 56524
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32
+calls=18 84
+585 38612
+cfl=~
+cfn=<built-in method builtins.len>
+calls=18 0
+585 6994
+
+fl=<frozen importlib._bootstrap_external>
+fn=_validate_timestamp_pyc
+618 92559
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32
+calls=36 84
+618 42951
+
+fl=<frozen importlib._bootstrap_external>
+fn=_compile_bytecode
+670 88904
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=18 244
+670 13429
+cfl=~
+cfn=<built-in method _imp._fix_co_filename>
+calls=18 0
+670 9296
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=18 0
+670 5742
+cfl=~
+cfn=<built-in method marshal.loads>
+calls=18 0
+670 3637963
+
+fl=<frozen importlib._bootstrap_external>
+fn=spec_from_file_location
+721 478400
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:357
+calls=19 357
+721 26199
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isabs
+calls=19 180
+721 28698
+cfl=~
+cfn=<built-in method posix.fspath>
+calls=19 0
+721 4915
+
+fl=<frozen importlib._bootstrap_external>
+fn=create_module:874
+874 4708
+
+fl=<frozen importlib._bootstrap_external>
+fn=exec_module:877
+877 108438
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed
+calls=18 233
+877 22779139
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_code
+calls=18 950
+877 5621789
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_code
+950 205385
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=18 244
+950 11495
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source
+calls=18 380
+950 198397
+cfl=<frozen importlib._bootstrap_external>
+cfn=_check_name_wrapper
+calls=18 542
+950 35774
+cfl=<frozen importlib._bootstrap_external>
+cfn=_classify_pyc
+calls=18 585
+950 102130
+cfl=<frozen importlib._bootstrap_external>
+cfn=_validate_timestamp_pyc
+calls=18 618
+950 135510
+cfl=<frozen importlib._bootstrap_external>
+cfn=_compile_bytecode
+calls=18 670
+950 3755334
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_data
+calls=18 1070
+950 1027844
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_stats
+calls=18 1089
+950 149920
+
+fl=<frozen importlib._bootstrap_external>
+fn=__init__:1040
+1040 13415
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_filename
+1065 4839
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_data
+1070 117120
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=18 0
+1070 6389
+cfl=~
+cfn=<built-in method io.open_code>
+calls=18 0
+1070 461349
+cfl=~
+cfn=<method '__exit__' of '_io._IOBase' objects>
+calls=18 0
+1070 174145
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=18 0
+1070 268841
+
+fl=<frozen importlib._bootstrap_external>
+fn=path_stats
+1089 22742
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=18 140
+1089 127178
+
+fl=<frozen importlib._bootstrap_external>
+fn=__init__:1163
+1163 1684
+
+fl=<frozen importlib._bootstrap_external>
+fn=create_module:1174
+1174 7814
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed
+calls=1 233
+1174 2177259
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=1 244
+1174 1366
+
+fl=<frozen importlib._bootstrap_external>
+fn=exec_module:1182
+1182 2975
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed
+calls=1 233
+1182 3733
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=1 244
+1182 555
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_importer_cache
+1356 30815
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_spec:1399
+1399 95726
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_importer_cache
+calls=26 1356
+1399 30815
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1536
+calls=23 1536
+1399 1758277
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=23 0
+1399 14183
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=26 0
+1399 5795
+
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec:1431
+1431 28931
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1399
+calls=19 1399
+1431 1904796
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_spec:1531
+1531 39061
+cfl=<frozen importlib._bootstrap_external>
+cfn=spec_from_file_location
+calls=19 721
+1531 538212
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__:1040
+calls=18 1040
+1531 13415
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__:1163
+calls=1 1163
+1531 1684
+
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec:1536
+1536 339074
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=93 244
+1536 38715
+cfl=<frozen importlib._bootstrap_external>
+cfn=_relax_case
+calls=23 71
+1536 5720
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join
+calls=93 126
+1536 353684
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=23 140
+1536 255780
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isfile
+calls=19 159
+1536 166139
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1531
+calls=19 1531
+1536 592372
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=23 0
+1536 6793
+
+fl=<string>
+fn=<module>
+1 645
+
+fl=~
+fn=<built-in method PIL._imaging.blend>
+0 281629622
+
+fl=~
+fn=<built-in method PIL._imaging.fill>
+0 9711984
+
+fl=~
+fn=<built-in method PIL._imaging.jpeg_decoder>
+0 101636
+
+fl=~
+fn=<built-in method PIL._imaging.jpeg_encoder>
+0 108997
+
+fl=~
+fn=<built-in method PIL._imaging.new>
+0 7196705
+
+fl=~
+fn=<built-in method __new__ of type object at 0x58da128db9a0>
+0 224264
+
+fl=~
+fn=<built-in method _abc._abc_init>
+0 224226
+
+fl=~
+fn=<built-in method _abc._abc_instancecheck>
+0 206202
+cfl=/usr/lib/python3.10/abc.py
+cfn=__subclasscheck__
+calls=6 121
+0 114172
+
+fl=~
+fn=<built-in method _abc._abc_register>
+0 4644
+cfl=/usr/lib/python3.10/abc.py
+cfn=__subclasscheck__
+calls=1 121
+0 36560
+
+fl=~
+fn=<built-in method _abc._abc_subclasscheck>
+0 102402
+cfl=/usr/lib/python3.10/_collections_abc.py
+cfn=__subclasshook__:409
+calls=1 409
+0 1960
+cfl=/usr/lib/python3.10/_collections_abc.py
+cfn=__subclasshook__:566
+calls=2 566
+0 29366
+cfl=/usr/lib/python3.10/abc.py
+cfn=__subclasscheck__
+calls=10 121
+0 54857
+
+fl=~
+fn=<built-in method _functools.reduce>
+0 178627
+
+fl=~
+fn=<built-in method _imp._fix_co_filename>
+0 9296
+
+fl=~
+fn=<built-in method _imp.acquire_lock>
+0 54988
+
+fl=~
+fn=<built-in method _imp.create_dynamic>
+0 1660219
+cfl=/usr/lib/python3.10/abc.py
+cfn=__new__
+calls=1 105
+0 225658
+cfl=/usr/lib/python3.10/abc.py
+cfn=register
+calls=1 110
+0 46061
+cfl=/usr/lib/python3.10/collections/__init__.py
+cfn=namedtuple
+calls=1 328
+0 241548
+
+fl=~
+fn=<built-in method _imp.exec_dynamic>
+0 757
+
+fl=~
+fn=<built-in method _imp.is_builtin>
+0 6736
+
+fl=~
+fn=<built-in method _imp.is_frozen>
+0 11637
+
+fl=~
+fn=<built-in method _imp.release_lock>
+0 21071
+
+fl=~
+fn=<built-in method _sre.compile>
+0 9546
+
+fl=~
+fn=<built-in method _sre.unicode_iscased>
+0 2065
+
+fl=~
+fn=<built-in method _sre.unicode_tolower>
+0 1246
+
+fl=~
+fn=<built-in method _struct.calcsize>
+0 8033
+
+fl=~
+fn=<built-in method _struct.unpack>
+0 86030
+
+fl=~
+fn=<built-in method _struct.unpack_from>
+0 90551
+
+fl=~
+fn=<built-in method _thread.allocate_lock>
+0 15678
+
+fl=~
+fn=<built-in method _thread.get_ident>
+0 28208
+
+fl=~
+fn=<built-in method builtins.__build_class__>
+0 509004
+cfl=/usr/lib/python3.10/abc.py
+cfn=__new__
+calls=4 105
+0 239975
+cfl=/usr/lib/python3.10/fractions.py
+cfn=Fraction
+calls=1 38
+0 43328
+cfl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+cfn=BmpImageFile
+calls=1 60
+0 93754
+cfl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+cfn=DibImageFile
+calls=1 277
+0 810
+cfl=/usr/lib/python3/dist-packages/PIL/GifImagePlugin.py
+cfn=GifImageFile
+calls=1 50
+0 6838
+cfl=/usr/lib/python3/dist-packages/PIL/GimpGradientFile.py
+cfn=GradientFile
+calls=1 66
+0 617
+cfl=/usr/lib/python3/dist-packages/PIL/GimpGradientFile.py
+cfn=GimpGradientFile
+calls=1 104
+0 551
+cfl=/usr/lib/python3/dist-packages/PIL/GimpPaletteFile.py
+cfn=GimpPaletteFile
+calls=1 22
+0 1029
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=ImageFile
+calls=1 80
+0 3850
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=StubImageFile
+calls=1 311
+0 1483
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=Parser
+calls=1 337
+0 2564
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=PyCodecState
+calls=1 568
+0 632
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=PyDecoder
+calls=1 579
+0 6275
+cfl=/usr/lib/python3/dist-packages/PIL/ImagePalette.py
+cfn=ImagePalette
+calls=1 25
+0 9376
+cfl=/usr/lib/python3/dist-packages/PIL/ImageSequence.py
+cfn=Iterator
+calls=1 19
+0 1614
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=JpegImageFile
+calls=1 340
+0 5340
+cfl=/usr/lib/python3/dist-packages/PIL/PaletteFile.py
+cfn=PaletteFile
+calls=1 19
+0 977
+cfl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+cfn=ChunkStream
+calls=1 145
+0 36390
+cfl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+cfn=iTXt
+calls=1 237
+0 5437
+cfl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+cfn=PngInfo
+calls=1 259
+0 42492
+cfl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+cfn=PngStream
+calls=1 343
+0 7034
+cfl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+cfn=PngImageFile
+calls=1 668
+0 3043465
+cfl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+cfn=_idat
+calls=1 1036
+0 1386
+cfl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+cfn=_fdat
+calls=1 1047
+0 1206
+cfl=/usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py
+cfn=PpmImageFile
+calls=1 47
+0 1334
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=IFDRational
+calls=1 294
+0 25941
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=ImageFileDirectory_v2
+calls=1 421
+0 1484339
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=ImageFileDirectory_v1
+calls=1 923
+0 10732
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=TiffImageFile
+calls=1 1022
+0 10452
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=AppendingTiffWriter
+calls=1 1779
+0 15464
+
+fl=~
+fn=<built-in method builtins.__import__>
+0 87575
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=15 1022
+0 25676267
+
+fl=~
+fn=<built-in method builtins.eval>
+0 113268
+cfl=<string>
+cfn=<module>
+calls=1 1
+0 645
+
+fl=~
+fn=<built-in method builtins.exec>
+0 50027
+cfl=/usr/lib/python3.10/decimal.py
+cfn=<module>
+calls=1 1
+0 2542091
+cfl=/usr/lib/python3.10/fractions.py
+cfn=<module>
+calls=1 1
+0 5282025
+cfl=/usr/lib/python3/dist-packages/PIL/BmpImagePlugin.py
+cfn=<module>
+calls=1 1
+0 2966296
+cfl=/usr/lib/python3/dist-packages/PIL/GifImagePlugin.py
+cfn=<module>
+calls=1 1
+0 1031588
+cfl=/usr/lib/python3/dist-packages/PIL/GimpGradientFile.py
+cfn=<module>
+calls=1 1
+0 46148
+cfl=/usr/lib/python3/dist-packages/PIL/GimpPaletteFile.py
+cfn=<module>
+calls=1 1
+0 19884
+cfl=/usr/lib/python3/dist-packages/PIL/ImageChops.py
+cfn=<module>
+calls=1 1
+0 63633
+cfl=/usr/lib/python3/dist-packages/PIL/ImageColor.py
+cfn=<module>
+calls=1 1
+0 23660
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=<module>
+calls=1 1
+0 156614
+cfl=/usr/lib/python3/dist-packages/PIL/ImageOps.py
+cfn=<module>
+calls=1 1
+0 22643
+cfl=/usr/lib/python3/dist-packages/PIL/ImagePalette.py
+cfn=<module>
+calls=1 1
+0 1337453
+cfl=/usr/lib/python3/dist-packages/PIL/ImageSequence.py
+cfn=<module>
+calls=1 1
+0 22246
+cfl=/usr/lib/python3/dist-packages/PIL/JpegImagePlugin.py
+cfn=<module>
+calls=1 1
+0 14498207
+cfl=/usr/lib/python3/dist-packages/PIL/JpegPresets.py
+cfn=<module>
+calls=1 1
+0 22751
+cfl=/usr/lib/python3/dist-packages/PIL/PaletteFile.py
+cfn=<module>
+calls=1 1
+0 18145
+cfl=/usr/lib/python3/dist-packages/PIL/PngImagePlugin.py
+cfn=<module>
+calls=1 1
+0 4189365
+cfl=/usr/lib/python3/dist-packages/PIL/PpmImagePlugin.py
+cfn=<module>
+calls=1 1
+0 65256
+cfl=/usr/lib/python3/dist-packages/PIL/TiffImagePlugin.py
+cfn=<module>
+calls=1 1
+0 8488025
+
+fl=~
+fn=<built-in method builtins.getattr>
+0 320065
+
+fl=~
+fn=<built-in method builtins.hasattr>
+0 271002
+
+fl=~
+fn=<built-in method builtins.isinstance>
+0 398443
+cfl=/usr/lib/python3.10/abc.py
+cfn=__instancecheck__
+calls=70 117
+0 414188
+
+fl=~
+fn=<built-in method builtins.len>
+0 297300
+cfl=/usr/lib/python3.10/sre_parse.py
+cfn=__len__
+calls=31 161
+0 18398
+
+fl=~
+fn=<built-in method builtins.max>
+0 65303
+cfl=<frozen importlib._bootstrap_external>
+cfn=<genexpr>
+calls=72 134
+0 54845
+
+fl=~
+fn=<built-in method builtins.min>
+0 19016
+
+fl=~
+fn=<built-in method builtins.ord>
+0 3440
+
+fl=~
+fn=<built-in method builtins.repr>
+0 30496
+
+fl=~
+fn=<built-in method builtins.round>
+0 24208
+
+fl=~
+fn=<built-in method builtins.setattr>
+0 50817
+
+fl=~
+fn=<built-in method builtins.sum>
+0 2087
+
+fl=~
+fn=<built-in method builtins.vars>
+0 2741
+
+fl=~
+fn=<built-in method from_bytes>
+0 15740
+
+fl=~
+fn=<built-in method fromkeys>
+0 3335
+
+fl=~
+fn=<built-in method io.open>
+0 3316473
+
+fl=~
+fn=<built-in method io.open_code>
+0 461349
+
+fl=~
+fn=<built-in method marshal.loads>
+0 3637963
+
+fl=~
+fn=<built-in method math.isnan>
+0 44776
+cfl=/usr/lib/python3.10/numbers.py
+cfn=__float__
+calls=10 283
+0 52894
+
+fl=~
+fn=<built-in method posix.fspath>
+0 43371
+
+fl=~
+fn=<built-in method posix.getpid>
+0 40329
+
+fl=~
+fn=<built-in method posix.listdir>
+0 124601
+
+fl=~
+fn=<built-in method posix.stat>
+0 461703
+
+fl=~
+fn=<built-in method sys._getframe>
+0 24370
+
+fl=~
+fn=<built-in method sys.intern>
+0 3036
+
+fl=~
+fn=<built-in method time.localtime>
+0 202392
+
+fl=~
+fn=<built-in method time.strftime>
+0 187096
+
+fl=~
+fn=<built-in method time.time>
+0 25625
+
+fl=~
+fn=<method '__contains__' of 'frozenset' objects>
+0 1629
+
+fl=~
+fn=<method '__exit__' of '_io._IOBase' objects>
+0 174145
+
+fl=~
+fn=<method '__exit__' of '_thread.lock' objects>
+0 12720
+
+fl=~
+fn=<method 'acquire' of '_thread.RLock' objects>
+0 47775
+
+fl=~
+fn=<method 'add' of 'set' objects>
+0 928
+
+fl=~
+fn=<method 'append' of 'list' objects>
+0 71047
+
+fl=~
+fn=<method 'cleanup' of 'ImagingDecoder' objects>
+0 18312
+
+fl=~
+fn=<method 'cleanup' of 'ImagingEncoder' objects>
+0 12113
+
+fl=~
+fn=<method 'clear' of 'dict' objects>
+0 7821
+
+fl=~
+fn=<method 'close' of '_io.BufferedRandom' objects>
+0 1304833
+
+fl=~
+fn=<method 'close' of '_io.BufferedReader' objects>
+0 287242
+
+fl=~
+fn=<method 'convert' of 'ImagingCore' objects>
+0 26690685
+
+fl=~
+fn=<method 'copy' of 'ImagingCore' objects>
+0 36220939
+
+fl=~
+fn=<method 'copy' of 'dict' objects>
+0 210222
+
+fl=~
+fn=<method 'decode' of 'ImagingDecoder' objects>
+0 175853803
+
+fl=~
+fn=<method 'disable' of '_lsprof.Profiler' objects>
+0 728
+
+fl=~
+fn=<method 'encode_to_file' of 'ImagingEncoder' objects>
+0 39286154
+
+fl=~
+fn=<method 'endswith' of 'str' objects>
+0 103761
+
+fl=~
+fn=<method 'extend' of 'list' objects>
+0 1599
+
+fl=~
+fn=<method 'fileno' of '_io.BufferedRandom' objects>
+0 9914
+
+fl=~
+fn=<method 'filter' of 'ImagingCore' objects>
+0 241917878
+
+fl=~
+fn=<method 'find' of 'bytearray' objects>
+0 8988
+
+fl=~
+fn=<method 'find' of 'str' objects>
+0 24062
+
+fl=~
+fn=<method 'flush' of '_io.BufferedRandom' objects>
+0 126202
+
+fl=~
+fn=<method 'flush' of '_io.TextIOWrapper' objects>
+0 21028
+
+fl=~
+fn=<method 'format' of 'str' objects>
+0 20145
+
+fl=~
+fn=<method 'gaussian_blur' of 'ImagingCore' objects>
+0 408658060
+
+fl=~
+fn=<method 'get' of 'dict' objects>
+0 172924
+
+fl=~
+fn=<method 'histogram' of 'ImagingCore' objects>
+0 8848476
+
+fl=~
+fn=<method 'isidentifier' of 'str' objects>
+0 4839
+
+fl=~
+fn=<method 'items' of 'dict' objects>
+0 2737
+
+fl=~
+fn=<method 'join' of 'str' objects>
+0 52612
+cfl=/usr/lib/python3.10/collections/__init__.py
+cfn=<genexpr>
+calls=4 402
+0 2967
+
+fl=~
+fn=<method 'lower' of 'str' objects>
+0 21499
+
+fl=~
+fn=<method 'pixel_access' of 'ImagingCore' objects>
+0 241683
+
+fl=~
+fn=<method 'pop' of 'dict' objects>
+0 33316
+
+fl=~
+fn=<method 'read' of '_io.BufferedReader' objects>
+0 1536974
+
+fl=~
+fn=<method 'read' of '_io.BytesIO' objects>
+0 29626
+
+fl=~
+fn=<method 'release' of '_thread.RLock' objects>
+0 14635
+
+fl=~
+fn=<method 'replace' of 'str' objects>
+0 6965
+
+fl=~
+fn=<method 'resize' of 'ImagingCore' objects>
+0 15938963
+
+fl=~
+fn=<method 'rfind' of 'str' objects>
+0 88686
+
+fl=~
+fn=<method 'rpartition' of 'str' objects>
+0 92279
+
+fl=~
+fn=<method 'rstrip' of 'str' objects>
+0 57099
+
+fl=~
+fn=<method 'seek' of '_io.BufferedReader' objects>
+0 59716
+
+fl=~
+fn=<method 'seek' of '_io.BytesIO' objects>
+0 14582
+
+fl=~
+fn=<method 'setimage' of 'ImagingDecoder' objects>
+0 30962
+
+fl=~
+fn=<method 'setimage' of 'ImagingEncoder' objects>
+0 31658
+
+fl=~
+fn=<method 'setter' of 'property' objects>
+0 1707
+
+fl=~
+fn=<method 'sort' of 'list' objects>
+0 230027
+cfl=/usr/lib/python3/dist-packages/PIL/ImageFile.py
+cfn=_tilesort
+calls=20 70
+0 15831
+
+fl=~
+fn=<method 'split' of 'str' objects>
+0 1825
+
+fl=~
+fn=<method 'startswith' of 'bytes' objects>
+0 15064
+
+fl=~
+fn=<method 'startswith' of 'str' objects>
+0 37049
+
+fl=~
+fn=<method 'tell' of '_io.BytesIO' objects>
+0 10349
+
+fl=~
+fn=<method 'upper' of 'str' objects>
+0 59392
+
+fl=~
+fn=<method 'write' of '_io.TextIOWrapper' objects>
+0 848356
+
