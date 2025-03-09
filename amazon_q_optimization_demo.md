@@ -19,7 +19,7 @@ This framework allows developers to:
 
 ## Components of the Framework
 
-### 1. Basic Profiling (`profile_processor.py`)
+### 1. Basic Profiling (`profiling/profile_processor.py`)
 
 This script provides three essential profiling methods:
 
@@ -29,7 +29,7 @@ This script provides three essential profiling methods:
 
 The profiling results are both displayed in the console and saved to files for further analysis.
 
-### 2. Stress Testing Framework (`stress_test.py` and `profile_stress_test.py`)
+### 2. Stress Testing Framework (`scripts/stress_test.py` and `profiling/profile_stress_test.py`)
 
 The stress testing framework extends the basic profiling with:
 
@@ -104,7 +104,7 @@ Here's a step-by-step workflow to demonstrate Amazon Q Developer's optimization 
 
 1. **Run Initial Profiling**:
    ```bash
-   python profile_processor.py
+   python -m profiling.profile_processor
    ```
 
 2. **Ask Amazon Q to Analyze Results**:
@@ -118,7 +118,7 @@ Here's a step-by-step workflow to demonstrate Amazon Q Developer's optimization 
 
 5. **Run Stress Test to Verify**:
    ```bash
-   python profile_stress_test.py
+   python -m profiling.profile_stress_test
    ```
 
 6. **Analyze Improvements with Amazon Q**:

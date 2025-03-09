@@ -11,7 +11,12 @@ import pstats
 import time
 import argparse
 from memory_profiler import profile as memory_profile
-from image_processor import ImageProcessor
+
+# Add the parent directory to the path so we can import the src package
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.image_processor import ImageProcessor
+from src.utils.file_utils import ensure_directory
 
 def cpu_profile(input_dir, output_dir, profile_output):
     """Profile the CPU usage of the image processor."""
@@ -73,19 +78,19 @@ def run_time_profile(input_dir, output_dir):
 def main():
     """Main function to parse arguments and run the profiler."""
     parser = argparse.ArgumentParser(description='Profile the image processor application.')
-    parser.add_argument('--input', '-i', default='./images', 
+    parser.add_argument('--input', '-i', default='./data/images', 
                         help='Directory containing input images')
-    parser.add_argument('--output', '-o', default='./output',
+    parser.add_argument('--output', '-o', default='./data/output',
                         help='Directory for processed images')
     parser.add_argument('--profile-type', '-p', choices=['cpu', 'memory', 'time', 'all'],
                         default='all', help='Type of profiling to run')
-    parser.add_argument('--profile-output', default='./profiles/profile_stats.prof',
+    parser.add_argument('--profile-output', default='./profiling/reports/profile_stats.prof',
                         help='Output file for profiling data')
     
     args = parser.parse_args()
     
     # Ensure profiles directory exists
-    os.makedirs(os.path.dirname(args.profile_output), exist_ok=True)
+    ensure_directory(os.path.dirname(args.profile_output))
     
     # Run the selected profiling type
     if args.profile_type in ['cpu', 'all']:
