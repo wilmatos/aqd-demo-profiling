@@ -101,8 +101,11 @@ image-processor/
 ├── tests/                         # Test directory
 │
 ├── profiling/                     # Profiling tools and results
-│
-├── docs/                          # Documentation
+│   ├── profile_processor.py       # CPU and memory profiling
+│   ├── profile_stress_test.py     # Profiling under stress conditions
+│   ├── run_profiling_with_visualization.py  # Visualization of profiling results
+│   ├── visualize_profile.py       # Profile visualization utilities
+│   └── reports/                   # Directory for profiling reports
 │
 └── data/                          # Data directories
     ├── images/                    # Input images
@@ -111,9 +114,9 @@ image-processor/
 
 ## Documentation
 
-- [Project Details](docs/project_details.md) - Detailed information about the project structure and components
-- [Profiling Analysis](docs/profiling_analysis.md) - Analysis of performance profiling results
-- [KCachegrind Usage Guide](docs/kcachegrind_usage_guide.md) - Guide for using KCachegrind with profiling results
+- [Project Details](project_details.md) - Detailed information about the project structure and components
+- [Profiling Analysis](profiling_analysis.md) - Analysis of performance profiling results
+- [KCachegrind Usage Guide](kcachegrind_usage_guide.md) - Guide for using KCachegrind with profiling results
 
 ## Development
 
