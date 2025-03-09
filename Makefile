@@ -7,16 +7,16 @@ test:
 	python -m unittest discover -s tests
 
 profile:
-	python -m profiling.profile_processor
+	python -m profiling.profile_processor --input ./data/images --output ./data/output
 
 profile-visualize:
-	python -m profiling.run_profiling_with_visualization
+	python -m profiling.run_profiling_with_visualization --input ./data/images --output ./data/output
 
 download-samples:
-	python -m scripts.download_sample_images
+	python -m scripts.download_sample_images --output ./data/images
 
 stress-test:
-	python -m scripts.stress_test
+	python -m scripts.stress_test --input ./data/images --output ./data/output --iterations 3
 
 clean:
 	rm -rf data/output/*
