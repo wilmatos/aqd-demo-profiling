@@ -169,8 +169,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Project specific
 get-pip.py
-images/*
-output/*
-profiles/*
-.amazonq/formatoutput.md
+data/images/*
+data/output/*
+profiling/reports/*
+.amazonq/
+
+# Keep directories but not their contents
+!data/images/.gitkeep
+!data/output/.gitkeep
+!profiling/reports/.gitkeep
