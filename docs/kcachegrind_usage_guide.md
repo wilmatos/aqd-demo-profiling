@@ -31,7 +31,7 @@ KCachegrind uses the Callgrind format, so we need to convert Python's profiling 
 1. First, generate a profile using our profiling tools:
 
 ```bash
-python -m profiling.profile_processor --profile-output ./profiling/reports/profile_stats.prof
+python -m profiling.profile_processor --input ./data/images --output ./data/output --profile-output ./profiling/reports/profile_stats.prof
 ```
 
 2. Convert the Python profile to Callgrind format using pyprof2calltree:

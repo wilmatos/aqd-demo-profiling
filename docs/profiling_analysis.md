@@ -14,18 +14,18 @@ The CPU profile shows where the application is spending most of its time:
    List reduced from 436 to 20 due to restriction <20>
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    0.740    0.740 image_processor.py:116(process_all_images)
-        5    0.002    0.000    0.739    0.148 image_processor.py:84(process_image)
+        1    0.000    0.000    0.740    0.740 src/image_processor.py:116(process_all_images)
+        5    0.002    0.000    0.739    0.148 src/image_processor.py:84(process_image)
        10    0.000    0.000    0.385    0.039 Image.py:1197(filter)
-        5    0.000    0.000    0.271    0.054 image_processor.py:57(apply_blur)
+        5    0.000    0.000    0.271    0.054 src/image_processor.py:57(apply_blur)
         5    0.000    0.000    0.268    0.054 ImageFilter.py:164(filter)
         5    0.268    0.054    0.268    0.054 {method 'gaussian_blur' of 'ImagingCore' objects}
-        5    0.000    0.000    0.164    0.033 image_processor.py:63(apply_sharpen)
+        5    0.000    0.000    0.164    0.033 src/image_processor.py:63(apply_sharpen)
        15    0.000    0.000    0.139    0.009 ImageEnhance.py:25(enhance)
        15    0.000    0.000    0.139    0.009 Image.py:3032(blend)
        15    0.138    0.009    0.138    0.009 {built-in method PIL._imaging.blend}
        25    0.000    0.000    0.134    0.005 Image.py:1117(copy)
-        5    0.000    0.000    0.129    0.026 image_processor.py:50(apply_resize)
+        5    0.000    0.000    0.129    0.026 src/image_processor.py:50(apply_resize)
 ```
 
 Key observations:
@@ -122,11 +122,11 @@ Based on the profiling results, the following optimizations were implemented:
    List reduced from 293 to 20 due to restriction <20>
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    1.502    1.502 image_processor.py:117(process_all_images)
+        1    0.000    0.000    1.502    1.502 src/image_processor.py:117(process_all_images)
        49    1.473    0.030    1.473    0.030 {method 'acquire' of '_thread.lock' objects}
        13    0.000    0.000    1.463    0.113 threading.py:288(wait)
        20    0.000    0.000    1.459    0.073 _base.py:430(result)
-        1    0.000    0.000    0.026    0.026 image_processor.py:134(<dictcomp>)
+        1    0.000    0.000    0.026    0.026 src/image_processor.py:134(<dictcomp>)
        20    0.003    0.000    0.026    0.001 process.py:717(submit)
        20    0.000    0.000    0.019    0.001 process.py:674(_start_executor_manager_thread)
 ```

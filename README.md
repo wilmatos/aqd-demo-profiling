@@ -70,6 +70,8 @@ python -m profiling.profile_processor --input ./data/images --output ./data/outp
 make profile
 
 # Generate visualization of profiling results
+python -m profiling.run_profiling_with_visualization
+# Or use the Makefile
 make profile-visualize
 ```
 
