@@ -14,18 +14,18 @@ The CPU profile shows where the application is spending most of its time:
    List reduced from 436 to 20 due to restriction <20>
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    0.740    0.740 image_processor.py:116(process_all_images)
-        5    0.002    0.000    0.739    0.148 image_processor.py:84(process_image)
+        1    0.000    0.000    0.740    0.740 src/image_processor.py:116(process_all_images)
+        5    0.002    0.000    0.739    0.148 src/image_processor.py:84(process_image)
        10    0.000    0.000    0.385    0.039 Image.py:1197(filter)
-        5    0.000    0.000    0.271    0.054 image_processor.py:57(apply_blur)
+        5    0.000    0.000    0.271    0.054 src/image_processor.py:57(apply_blur)
         5    0.000    0.000    0.268    0.054 ImageFilter.py:164(filter)
         5    0.268    0.054    0.268    0.054 {method 'gaussian_blur' of 'ImagingCore' objects}
-        5    0.000    0.000    0.164    0.033 image_processor.py:63(apply_sharpen)
+        5    0.000    0.000    0.164    0.033 src/image_processor.py:63(apply_sharpen)
        15    0.000    0.000    0.139    0.009 ImageEnhance.py:25(enhance)
        15    0.000    0.000    0.139    0.009 Image.py:3032(blend)
        15    0.138    0.009    0.138    0.009 {built-in method PIL._imaging.blend}
        25    0.000    0.000    0.134    0.005 Image.py:1117(copy)
-        5    0.000    0.000    0.129    0.026 image_processor.py:50(apply_resize)
+        5    0.000    0.000    0.129    0.026 src/image_processor.py:50(apply_resize)
 ```
 
 Key observations:
@@ -63,7 +63,7 @@ Total execution time was 0.71 seconds for processing 5 images, with an average o
 ## Performance Bottlenecks Identified
 
 1. **Inefficient File Listing**: 
-   - The `get_image_files()` method walks through all files multiple times, once for each extension.
+   - The `get_image_files()` method in `src/image_processor.py` walks through all files multiple times, once for each extension.
    - This becomes increasingly inefficient as the number of files or supported extensions grows.
 
 2. **Unnecessary Image Copies**: 

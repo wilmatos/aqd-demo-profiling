@@ -7,7 +7,7 @@ This guide explains how to use KCachegrind to analyze Python profiling data in t
 KCachegrind has been set up in this project to visualize profiling data. You can run profiling and open KCachegrind in one step:
 
 ```bash
-python run_profiling_with_visualization.py
+python -m profiling.run_profiling_with_visualization
 ```
 
 ## Understanding the KCachegrind Interface

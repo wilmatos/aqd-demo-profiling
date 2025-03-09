@@ -7,21 +7,40 @@ This project demonstrates how to identify and optimize performance bottlenecks i
 ## Project Structure
 
 ```
-/home/wmatosjr/apps/image-processor/
-├── images/           # Directory for input images
-├── output/           # Directory for processed images
-├── profiles/         # Directory for profiling data
-├── image_processor.py  # Main application with intentional inefficiencies
-├── profile_processor.py  # Script to profile the application
-├── download_sample_images.py  # Script to download sample images
-├── requirements.txt   # Python dependencies
-├── README.md         # Project documentation
-└── project_details.md  # This detailed explanation file
+image-processor/
+├── src/                           # Source code directory
+│   ├── image_processor.py         # Main application with intentional inefficiencies
+│   └── utils/                     # Utility modules
+│       └── file_utils.py          # File handling utilities
+│
+├── scripts/                       # Executable scripts
+│   ├── download_sample_images.py  # Script to download sample images
+│   ├── run_processor.py           # Main entry point script
+│   └── stress_test.py             # Script to run stress tests
+│
+├── profiling/                     # Profiling tools and results
+│   ├── profile_processor.py       # Script to profile the application
+│   ├── profile_stress_test.py     # Profiling under stress conditions
+│   ├── run_profiling_with_visualization.py  # Visualization runner
+│   ├── visualize_profile.py       # Profile visualization utilities
+│   └── reports/                   # Directory for profiling data
+│
+├── data/                          # Data directories
+│   ├── images/                    # Directory for input images
+│   └── output/                    # Directory for processed images
+│
+├── tests/                         # Test directory
+│   └── test_image_processor.py    # Unit tests for image processor
+│
+├── setup.py                       # Package installation script
+├── requirements.txt               # Python dependencies
+├── README.md                      # Project documentation
+└── project_details.md             # This detailed explanation file
 ```
 
 ## Key Components
 
-### 1. Image Processor (`image_processor.py`)
+### 1. Image Processor (`src/image_processor.py`)
 
 The main application processes images through multiple transformations. It includes several intentional performance issues:
 
@@ -49,7 +68,7 @@ The main application processes images through multiple transformations. It inclu
 - No error handling for image loading
 - Saves images with high quality setting (95) which is inefficient
 
-### 2. Profiler (`profile_processor.py`)
+### 2. Profiler (`profiling/profile_processor.py`)
 
 This script provides three types of profiling:
 
@@ -67,7 +86,7 @@ This script provides three types of profiling:
 - Simple timing of the overall execution
 - Provides a baseline for measuring optimization improvements
 
-### 3. Sample Image Downloader (`download_sample_images.py`)
+### 3. Sample Image Downloader (`scripts/download_sample_images.py`)
 
 A utility script to download sample images from Unsplash for testing:
 - Downloads a specified number of random images
@@ -78,28 +97,27 @@ A utility script to download sample images from Unsplash for testing:
 
 1. **Install Dependencies:**
    ```bash
-   pip install -r /home/wmatosjr/apps/image-processor/requirements.txt
+   pip install -r requirements.txt
    ```
 
 2. **Download Sample Images:**
    ```bash
-   cd /home/wmatosjr/apps/image-processor
-   ./download_sample_images.py --count 10
+   python -m scripts.download_sample_images --count 10
    ```
 
 3. **Run the Image Processor:**
    ```bash
-   ./image_processor.py
+   python -m scripts.run_processor
    ```
 
 4. **Profile the Application:**
    ```bash
-   ./profile_processor.py
+   python -m profiling.profile_processor
    ```
 
 5. **Visualize CPU Profile Data:**
    ```bash
-   snakeviz ./profiles/profile_stats.prof
+   python -m profiling.run_profiling_with_visualization
    ```
 
 ## Optimization Opportunities with Amazon Q Developer
