@@ -10,52 +10,18 @@ components:
       memoryLimit: 2Gi
       mountSources: true
 commands:
-  - id: install-dependencies
+  - id: install
     exec:
       component: dev
       commandLine: "pip install -r requirements.txt"
       workingDir: ${PROJECT_SOURCE}
-  - id: download-sample-images
+  - id: build
     exec:
       component: dev
       commandLine: "python download_sample_images.py --count 10"
       workingDir: ${PROJECT_SOURCE}
-  - id: run-application
+  - id: test
     exec:
       component: dev
-      commandLine: "python image_processor.py --input ./images --output ./output"
+      commandLine: "python image_processor.py --input ./images --output ./output && python profile_processor.py --input ./images --output ./output && python stress_test.py && python profile_stress_test.py && python visualize_profile.py ./profiles/profile_stats.prof --no-open && python visualize_profile.py ./profiles/stress_profile_stats.prof --no-open"
       workingDir: ${PROJECT_SOURCE}
-  - id: run-profiling
-    exec:
-      component: dev
-      commandLine: "python profile_processor.py --input ./images --output ./output"
-      workingDir: ${PROJECT_SOURCE}
-  - id: run-stress-test
-    exec:
-      component: dev
-      commandLine: "python stress_test.py"
-      workingDir: ${PROJECT_SOURCE}
-  - id: profile-stress-test
-    exec:
-      component: dev
-      commandLine: "python profile_stress_test.py"
-      workingDir: ${PROJECT_SOURCE}
-  - id: visualize-profile
-    exec:
-      component: dev
-      commandLine: "python visualize_profile.py ./profiles/profile_stats.prof --no-open"
-      workingDir: ${PROJECT_SOURCE}
-  - id: visualize-stress-profile
-    exec:
-      component: dev
-      commandLine: "python visualize_profile.py ./profiles/stress_profile_stats.prof --no-open"
-      workingDir: ${PROJECT_SOURCE}
-events:
-  postStart:
-    - install-dependencies
-    - download-sample-images
-  preStop:
-    - run-profiling
-    - profile-stress-test
-    - visualize-profile
-    - visualize-stress-profile
