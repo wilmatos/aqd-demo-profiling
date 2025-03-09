@@ -169,10 +169,18 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Generated image files
 *.jpg
+
+# Profiling data and reports
 *.prof
 *.png
 *.dot
 callgrind.out
+
+# Amazon Q temporary files
 .amazonq/
+
+# Python installer script
 get-pip.py

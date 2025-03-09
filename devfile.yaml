@@ -1,0 +1,27 @@
+schemaVersion: 2.0.0
+metadata:
+  name: image-processor
+  version: 1.0.0
+  description: Image Processing Performance Optimization Demo
+components:
+  - name: dev
+    container:
+      image: public.ecr.aws/aws-mde/universal-image:latest
+      memoryLimit: 2Gi
+      mountSources: true
+commands:
+  - id: install
+    exec:
+      component: dev
+      commandLine: "pip install -r requirements.txt"
+      workingDir: ${PROJECT_SOURCE}
+  - id: build
+    exec:
+      component: dev
+      commandLine: "python download_sample_images.py --count 10"
+      workingDir: ${PROJECT_SOURCE}
+  - id: test
+    exec:
+      component: dev
+      commandLine: "python image_processor.py --input ./images --output ./output && python profile_processor.py --input ./images --output ./output && python stress_test.py && python profile_stress_test.py && python visualize_profile.py ./profiles/profile_stats.prof --no-open && python visualize_profile.py ./profiles/stress_profile_stats.prof --no-open"
+      workingDir: ${PROJECT_SOURCE}
