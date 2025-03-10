@@ -184,3 +184,7 @@ callgrind.out
 
 # Python installer script
 get-pip.py
+blog_outline.md
+blog_post.md
+blog_prompt.md
+README copy.md
