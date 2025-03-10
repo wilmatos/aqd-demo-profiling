@@ -2,21 +2,74 @@
 
 This project demonstrates how to identify and optimize performance bottlenecks in a Python image processing application using profiling tools and Amazon Q Developer.
 
-## Project Structure
+## Repository Structure
 
 ```
 image-processor/
-├── images/                # Place input images here
-├── output/                # Processed images will be saved here
-├── profiles/              # Profiling data will be saved here
-├── image_processor.py     # Main application with intentional inefficiencies
-├── profile_processor.py   # Script to profile the application
-├── stress_test.py         # Extended version with more intensive processing
-├── profile_stress_test.py # Script to profile the stress test
-├── download_sample_images.py  # Script to download sample images
-├── profiling_analysis.md  # Analysis of profiling results
+├── src/                   # Source code directory
+│   ├── __init__.py
+│   ├── image_processor.py # Core image processing implementation
+│   └── utils/            # Utility functions
+│       ├── __init__.py
+│       └── file_utils.py
+├── scripts/              # Helper scripts
+│   ├── download_sample_images.py
+│   ├── run_processor.py
+│   └── stress_test.py
+├── tests/               # Test files
+│   ├── __init__.py
+│   └── test_image_processor.py
+├── profiling/          # Profiling tools and reports
+│   ├── profile_processor.py
+│   ├── profile_stress_test.py
+│   ├── run_profiling_with_visualization.py
+│   ├── visualize_profile.py
+│   └── reports/        # Profiling output files
+│       ├── profile_stats.prof
+│       ├── stress_test_profile.prof
+│       ├── callgrind.out
+│       └── profile_visualization.{dot,png}
+├── data/               # Data directories
+│   ├── images/        # Input images
+│   └── output/        # Processed images
+├── docs/              # Documentation
+│   ├── profiling_analysis.md
+│   ├── kcachegrind_usage_guide.md
+│   └── project_details.md
+├── image_processor.py      # Original implementation
+├── optimized_image_processor.py  # Optimized version
+├── compare_performance.py  # Performance comparison tool
+├── run_optimized.py       # Script to run optimized version
+├── devfile.yaml           # Development environment config
 ├── requirements.txt       # Python dependencies
-└── README.md              # This file
+├── setup.py              # Package setup file
+└── README.md             # This file
+```
+
+## Data Flow
+
+```mermaid
+graph TD
+    A[Input Images] --> B[Image Processor]
+    B --> C{Processing Pipeline}
+    C -->|1| D[Resize]
+    C -->|2| E[Blur]
+    C -->|3| F[Sharpen]
+    C -->|4| G[Contrast]
+    C -->|5| H[Brightness]
+    D & E & F & G & H --> I[Processed Image]
+    I --> J[Output Directory]
+    
+    K[Profile Processor] --> B
+    K --> L[Profile Reports]
+    
+    M[Stress Test] --> B
+    M --> N[Performance Metrics]
+    
+    O[Compare Performance] --> P{Analysis}
+    P --> Q[Original Version]
+    P --> R[Optimized Version]
+    Q & R --> S[Performance Report]
 ```
 
 ## Setup
