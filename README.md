@@ -85,13 +85,15 @@ python -m scripts.stress_test --input ./data/images --output ./data/output --ite
 make stress-test
 ```
 
-## Project Structure
+## Repository Structure
 
 ```
 image-processor/
 ├── src/                           # Source code directory
 │   ├── image_processor.py         # Core image processing functionality
+│   ├── __init__.py               # Package initialization
 │   └── utils/                     # Utility modules
+│       └── file_utils.py         # File handling utilities
 │
 ├── scripts/                       # Executable scripts
 │   ├── download_sample_images.py  # Script to download sample images
@@ -99,14 +101,74 @@ image-processor/
 │   └── run_processor.py          # Main entry point script
 │
 ├── tests/                         # Test directory
+│   ├── __init__.py               # Test package initialization
+│   └── test_image_processor.py   # Unit tests for image processor
 │
 ├── profiling/                     # Profiling tools and results
+│   ├── profile_processor.py       # CPU and memory profiling
+│   ├── profile_stress_test.py    # Profiling under stress conditions
+│   ├── run_profiling_with_visualization.py  # Visualization of profiling results
+│   ├── visualize_profile.py      # Profile visualization utilities
+│   ├── reports/                  # Directory for profiling reports
+│   └── __init__.py              # Profiling package initialization
 │
-├── docs/                          # Documentation
+├── data/                         # Data directories
+│   ├── images/                   # Input images directory
+│   └── output/                   # Processed images output directory
 │
-└── data/                          # Data directories
-    ├── images/                    # Input images
-    └── output/                    # Output images
+├── docs/                         # Documentation files
+│   ├── project_details.md        # Detailed project information
+│   ├── profiling_analysis.md     # Analysis of profiling results
+│   └── kcachegrind_usage_guide.md # Guide for KCachegrind usage
+│
+├── .github/                      # GitHub specific files
+│   └── workflows/                # GitHub Actions workflows
+│
+├── setup.py                      # Package setup file
+├── requirements.txt              # Project dependencies
+├── pyproject.toml               # Project configuration
+├── Makefile                     # Build automation
+├── LICENSE                      # MIT License file
+├── README.md                    # Project documentation
+└── .gitignore                   # Git ignore rules
+```
+
+## Data Flow
+
+```mermaid
+graph TD
+    A[Input Images] --> B[Image Processor]
+    B --> C{Parallel Processing Pool}
+    C --> |Worker 1| D[Image Pipeline]
+    C --> |Worker 2| E[Image Pipeline]
+    C --> |Worker N| F[Image Pipeline]
+    
+    subgraph "Image Transformation Pipeline"
+        D --> D1[Load Image]
+        D1 --> D2[Resize]
+        D2 --> D3[Apply Blur]
+        D3 --> D4[Enhance Sharpness]
+        D4 --> D5[Adjust Contrast]
+        D5 --> D6[Adjust Brightness]
+        D6 --> D7[Save Image]
+    end
+    
+    D7 --> G[Processed Images]
+    E --> G
+    F --> G
+    
+    H[Performance Monitor] -.-> B
+    H -.-> C
+    H -.-> D
+    H --> J[Profile Reports]
+    
+    K[Stress Test] --> |Input| B
+    K --> |Metrics| L[Performance Analysis]
+    L --> M[Optimization Insights]
+    
+    N[File Utils] -.-> |Support| B
+    N -.-> |Support| D1
+    N -.-> |Support| D7
 ```
 
 ## Documentation

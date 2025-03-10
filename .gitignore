@@ -181,3 +181,7 @@ profiling/reports/*
 !data/images/.gitkeep
 !data/output/.gitkeep
 !profiling/reports/.gitkeep
+blog_outline.md
+blog_post.md
+blog_prompt.md
+README copy.md
